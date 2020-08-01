@@ -1,0 +1,35 @@
+:root {
+    --text-color: rgb(255, 255, 255);
+    --grey-color: rgb(192, 192, 192);
+    --orange-color: rgb(255,163,26);
+}
+
+/* Lars Beijaard */
+#lars-beijaard {
+    color: var(--orange-color);
+}
+
+.introduction {
+    font-size: 55px;
+    position: absolute;
+    text-align: left;
+    margin-left: 115px;
+    top: 40%;
+}
+
+.introduction button {
+    background-color: var(--background-color);
+    border-color: var(--orange-color);
+    color: var(--orange-color);
+    border-radius: 5px;
+    font-size: 25px;
+    transition-duration: 1s;
+    padding: 0 10px;
+}
+
+.introduction button:hover {
+    background-color: var(--orange-color);
+    color: var(--text-color);
+    border-color: rgb(255, 255, 255, 0);
+    cursor: pointer;
+}
