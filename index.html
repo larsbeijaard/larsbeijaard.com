@@ -1,52 +1,35 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <meta charset="UTF-8">
-        
-        <!-- Default Page Styling-->
+
         <link rel="stylesheet" type="text/css" href="css/default.css">
+        <link rel="stylesheet" type="text/css" href="css/home/style.css">
 
-        <!-- Page styling-->
-        <link rel="stylesheet" type="text/css" href="css/main/style.css">
-
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-        <title>Lars Beijaard - Home</title>
+        <title>Lars Beijaard | HOME</title>
     </head>
 
     <body>
-        <!-- Navigations-->
-        <nav class="navigation">
-            <ul class="navigation-list">
-                <li><a href="index.html" id="current-page">Home</a></li>
+        <nav class="nav-bar">
+            <ul>
+                <li id="active-page"><a href="index.html">Home</a></li>
                 <li><a href="about-me.html">About me</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="skillset.html">Skillset</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
 
         <main>
-            <header>
-                <section class="introduction">
-                    <h1>
-                        Hello, my name is <span id="lars-beijaard">Lars Beijaard</span>.<br>
-                        And I am a Game Developer.
-                    </h1>
-                    <button><a href="about-me.html">Learn more</a></button>
-                </section>
-            </header>
+            <section class="page-intro">
+                <h4 class="name">Lars Beijaard</h4>
+                <h2 class="intro">Software- and Game Developer.</h2>
+                <h5 class="and-more">(and more!)</h5>
+                <button class="learn-more"><a href="about-me.html">Learn more</a></button>
+            </section>
         </main>
 
         <footer>
-            <p class="copyright">© 2020 - Developed by Lars Beijaard</p>
-
-            <section class="socials">
-                <a href="https://github.com/larsbeijaard" target="_blank"><i class="fa fa-github"></i></a>
-                <a href="mailto: larsbeijaard@outlook.com"><i class="fa fa-envelope"></i></a>
-                <a href="https://www.instagram.com/larsbeijaard/" target="_blank"><i class="fa fa-instagram"></i></a>
-            </section>
+            <p class="copyright">&copy; Lars Beijaard</p>
         </footer>
     </body>
 </html>
