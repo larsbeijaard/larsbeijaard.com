@@ -1,0 +1,54 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    background-color: rgb(41, 41, 41);
+}
+
+.page-intro {
+    width: 100%;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.name {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: rgb(56, 201, 97);
+    margin: 0;
+}
+
+.intro {
+    font-size: 60px;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s steps(40, end);
+}
+
+.and-more {
+    margin: 0;
+}
+
+.learn-more {
+    background-color: transparent;
+    color: rgb(56, 201, 97);
+    border-color: rgb(56, 201, 97);
+    border-radius: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 30px;
+    padding: 8px;
+    transition: 0.3s;
+}
+
+.learn-more:hover {
+    cursor: pointer;
+    font-size: 22px;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
