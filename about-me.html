@@ -1,42 +1,45 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <meta charset="UTF-8">
-        
-        <!-- Default Page Styling-->
-        <link rel="stylesheet" type="text/css" href="css/default.css">
 
-        <!-- Page styling-->
+        <link rel="stylesheet" type="text/css" href="css/default.css">
         <link rel="stylesheet" type="text/css" href="css/about-me/style.css">
-        
-        <title>Lars Beijaard - About Me</title>
+
+        <title>Lars Beijaard | ABOUT ME</title>
     </head>
 
     <body>
-        <!-- Navigations-->
-        <nav class="navigation">
-            <ul class="navigation-list">
+        <nav class="nav-bar">
+            <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about-me.html" id="current-page">About me</a></li>
+                <li id="active-page"><a href="about-me.html">About me</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="skillset.html">Skillset</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
 
         <main>
-            <h1 class="about-me">About Me</h1>
-            <p class="content">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. 
-            </p>
-            <figure>
-                <img class="picture" src="css/about-me/me.jpg" alt="A picture of myself">
-            </figure>
+            <section class="about-me">
+                <h2>About me</h2>
+                <p>
+                    My name is Lars Beijaard, I am 18 years old and a passionate developer. 
+                    <br>I am studying game development at Grafisch Lyceum Utrecht (GLU) in the Netherlands.
+                    <br>In my free time I mostly play video-games, of course. But other then playing
+                    <br>video-games all day I develop all sorts of stuff. For example I am developing:
+                    <br>video-games, software, bots, programs, and more.
+                    <br>
+                    <br>Other then that, I am an overall funny, openminded person. Which means I like
+                    <br>to go out of my comfort zone if it could lead to new potential ideas.
+                </p>
+                <figure>
+                    <img src="images/me.jpg" alt="A picture of myself." width="165" height="165">
+                </figure>
+            </section>
         </main>
 
         <footer>
-            <p class="copyright">© 2020 - Developed by Lars Beijaard</p>
+            <p class="copyright">&copy; Lars Beijaard</p>
         </footer>
     </body>
 </html>
