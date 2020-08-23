@@ -1,107 +1,38 @@
-:root {
-    --background-color: rgb(23, 26, 33);
-    --text-color: rgb(255, 255, 255);
-    --grey-color: rgb(192, 192, 192);
-    --orange-color: rgb(255,163,26);
-
-    --font-zoom-size: 18px;
+#active-page {
+    border-bottom: 1px solid rgb(56, 201, 97);
 }
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    font-family: Arial;
-}
-
-/* HYPER LINK */
 a {
-    color: var(--grey-color);
+    transition: 0.3s;
     text-decoration: none;
-    transition-duration: 0.2s;  
+    color: white;
 }
 
-li a:hover {
-    color: var(--text-color);
-    border-bottom: 1px solid var(--orange-color);
-    font-size: var(--font-zoom-size);
-}
-
-#current-page {
-    font-weight: bolder;
-    color: var(--text-color);
-    border-bottom: 1px solid var(--orange-color);
-    font-size: var(--font-zoom-size);
-}
-
-#external-link {
-    font-size: 15px;
-    transition-duration: 0.1s;
-}
-
-#external-link:hover {
-    font-size: 20px;
-    color: var(--text-color);
-}
-
-/* NAVIGATION BAR */
-.navigation {
-    z-index: 10;
-    position: absolute;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    margin-right: 215px;
-    right: 0;
-}
-
-.navigation-list {
-    text-align: center;
-    padding: 0 20px;
-}
-
-.navigation-list li {
-    display: inline-block;
-    text-transform: uppercase;
-    width: 100px;
-}
-
-/* COPYRIGHT */
-.copyright {
-    position: fixed;
-    color: rgb(255, 255, 255);
-    font-size: 11px;
-    text-align: left;
-    bottom: 0;
-    margin: 10px 10px;
-}
-
-/* SOCIALS */
-.socials {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 10px 20px;
-    transition-duration: 0.2s;
-}
-
-.socials a {
-    color: var(--grey-color);
-    font-size: 25px;
-    padding: 5px;
-}
-
-.socials a:hover {
-    color: var(--text-color);
-    font-size: 30px;
+a:hover {
     cursor: pointer;
+    color: rgb(56, 201, 97);
 }
 
-.socials button {
-    background-color: var(--background-color);
-    border: none;
+.nav-bar {
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: right;
+    width: 100%;
+}
+
+.nav-bar ul {
+    padding: 15px 45px;
+    list-style-type: none;
+}
+
+.nav-bar li {
+    display: inline-block;
+    padding: 0 30px;
+}
+
+.copyright {
+    font-size: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 15px;
 }
