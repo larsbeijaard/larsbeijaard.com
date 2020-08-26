@@ -1,0 +1,56 @@
+.header {
+    text-align: center;
+    padding-top: 3%;
+}
+
+.header h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgb(56, 201, 97);
+    margin: 0 auto;
+    width: 750px;
+}
+
+.first-look {
+    text-align: center;
+}
+
+.first-look img {
+    border: 1px solid rgb(56, 201, 97);
+}
+
+.info {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.info h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgb(56, 201, 97);
+    width: 450px;
+    margin: 0 auto;
+}
+
+.info h3 {
+    font-size: 25px;
+    border-bottom: 1px solid rgb(56, 201, 97);
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.info p {
+    font-size: 20px;
+    width: 65%;
+    margin: 10px auto;
+}
+
+.info ul {
+    font-size: 20px;
+}
+
+.info img {
+    border: 1px solid rgb(56, 201, 97);
+    display: inline-block;
+}
