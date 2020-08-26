@@ -1,0 +1,22 @@
+.projects {
+    text-align: center;
+    padding-top: 3%;
+}
+
+.projects h2 {
+    width: 175px;
+    margin: 0 auto;
+    font-size: 35px;
+    border-bottom: 1px solid rgb(56, 201, 97);
+}
+
+.projects ul {
+    list-style-type: none;
+}
+
+.projects li {
+    display: inline-block;
+    padding: 0 auto;
+    margin: 70px 80px;
+    border: 1px solid rgb(56, 201, 97);
+}
