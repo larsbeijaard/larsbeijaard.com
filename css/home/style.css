@@ -1,11 +1,3 @@
-body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    color: white;
-    background-color: rgb(41, 41, 41);
-}
-
 .page-intro {
     width: 100%;
     text-align: center;
