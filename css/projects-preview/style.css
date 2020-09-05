@@ -21,15 +21,6 @@
 
 .info {
     text-align: center;
-    padding-top: 40px;
-}
-
-.info h1 {
-    font-size: 35px;
-    text-transform: uppercase;
-    border-bottom: 1px solid rgb(56, 201, 97);
-    width: 450px;
-    margin: 0 auto;
 }
 
 .info h3 {
@@ -37,7 +28,6 @@
     border-bottom: 1px solid rgb(56, 201, 97);
     width: 300px;
     margin: 0 auto;
-    padding-top: 30px;
 }
 
 .info p {
@@ -53,4 +43,14 @@
 .info img {
     border: 1px solid rgb(56, 201, 97);
     display: inline-block;
+}
+
+.first-look, .the-project, .learnt, .information, .pictures-videos {
+    background-color: rgb(38, 38, 38);
+    border-left: 5px solid rgb(56, 201, 97);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 900px;
+    margin: 20px auto;
+    padding: 20px 0;
 }
