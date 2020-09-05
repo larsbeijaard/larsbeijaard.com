@@ -19,9 +19,9 @@ a:hover {
 }
 
 .back {
+    position: fixed;
     font-size: 30px;
-    padding-top: 15px;
-    padding-left: 15px;
+    padding-left: 30px;
     text-transform: uppercase;
 }
 
