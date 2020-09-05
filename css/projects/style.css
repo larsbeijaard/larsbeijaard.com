@@ -3,18 +3,18 @@
     padding-top: 3%;
 }
 
-.projects h2 {
+.page-header {
     width:  275px;
     margin: 0 auto;
     font-size: 50px;
     border-bottom: 1px solid rgb(56, 201, 97);
 }
 
-.projects ul {
+.projects-list {
     list-style-type: none;
 }
 
-.projects li {
+.projects-list li {
     transition-duration: 0.3s;
     background-color: rgb(36, 36, 36);
     display: inline-block;
@@ -22,16 +22,16 @@
     margin: 40px 70px;
 }
 
-.projects li:hover {
+.projects-list li:hover {
     background-color: rgb(30, 30, 30);
     color: rgb(56, 201, 97);
 }
 
-.projects img {
+.projects-list img {
     border: 5px solid rgb(36, 36, 36);
 }
 
-.projects h1 {
+.project-title {
     border-bottom: 1px solid rgb(56, 201, 97);
     width: 40%;
     margin: 15px auto;

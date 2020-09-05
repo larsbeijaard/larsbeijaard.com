@@ -5,14 +5,14 @@
     padding-top: 10%;
 }
 
-.page-intro h4 {
+.name {
     font-size: 30px;
     text-transform: uppercase;
     color: rgb(56, 201, 97);
     margin: 0;
 }
 
-.page-intro h2 {
+.type-of-developer {
     font-size: 60px;
     margin: 0 auto;
     overflow: hidden;
@@ -21,10 +21,6 @@
     animation: 
         typing 2s steps(40, end),
         blink-caret 1s step-end infinite;
-}
-
-.and-more {
-    margin: 0;
 }
 
 .learn-more {

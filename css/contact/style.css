@@ -8,22 +8,21 @@
     font-size: 35px;
 }
 
-/* List with the contact options */
-.contact ul {
+.contact-options-list {
     list-style-type: none;
     font-size: 35px;
 }
 
-.contact li {
+.contact-options-list li {
     display: inline-block;
 }
 
-.contact li:hover {
+.contact-options-list li:hover {
     border-bottom: 1px solid rgb(56, 201, 97);
     cursor: pointer;
 }
 
 /* The contact icon before each <li> */
-.contact i {
+.contact-options-list i {
     color: rgb(56, 201, 97);
 }
