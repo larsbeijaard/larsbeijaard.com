@@ -8,6 +8,7 @@
     font-size: 35px;
 }
 
+/* List with the contact options */
 .contact ul {
     list-style-type: none;
     font-size: 35px;
@@ -22,6 +23,7 @@
     cursor: pointer;
 }
 
+/* The contact icon before each <li> */
 .contact i {
     color: rgb(56, 201, 97);
 }
