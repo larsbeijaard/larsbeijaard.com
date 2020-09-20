@@ -18,8 +18,10 @@
     transition-duration: 0.3s;
     background-color: rgb(36, 36, 36);
     display: inline-block;
-    padding: 0 auto;
+    padding: auto;
     margin: 40px 70px;
+    max-width: 425px;
+    max-height: 239px;
 }
 
 .projects-list li:hover {
@@ -35,4 +37,13 @@
     border-bottom: 1px solid rgb(56, 201, 97);
     width: 40%;
     margin: 15px auto;
+}
+
+.more-projects {
+    text-align: center;
+    margin: 100px 0;
+}
+
+.more-projects a {
+    border-bottom: 1px solid rgb(56, 201, 97);
 }
