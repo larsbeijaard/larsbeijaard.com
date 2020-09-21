@@ -14,3 +14,7 @@
 .about-me p {
     font-size: 25px;
 }
+
+.cv a {
+    border-bottom: 1px solid rgb(56, 201, 97);
+}
