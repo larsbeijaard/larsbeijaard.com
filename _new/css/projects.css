@@ -1,0 +1,132 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.title {
+    font-size: 20px;
+    padding-bottom: 20px;
+    animation-name: appear-from-bottom;
+    animation-duration: 0.45s;
+}
+
+.project-button {
+    position: relative;
+    width: 100%;
+    animation-name: appear-from-bottom;
+    animation-duration: 0.45s;
+}
+
+.project-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.project-button li {
+    display: inline-block;
+    margin: 5px 20px;
+}
+
+.project-button button, .back-to-top {
+    border: none;
+    cursor: pointer;
+    padding: 8px 30px;
+    font-size: 15px;
+}
+
+.project-button button {
+    color: white;
+    background-color: #292929;
+}
+
+.project-button button:hover {
+    background-color: #474747;
+}
+
+.back-to-top {
+    background-color: #b5b5b5;
+    float: right;
+}
+
+.back-to-top a {
+    color: #292929;
+    text-decoration: none;
+}
+
+.back-to-top:hover {
+    background-color: #cfcfcf;
+}
+
+.project {
+    animation-name: appear-from-bottom;
+    animation-duration: 0.45s;
+}
+
+.project h1 {
+    margin-bottom: 20px;
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+}
+
+.image-slider {
+    position: relative;
+    width: 100%;
+}
+
+.image-slider-button {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.image-slider-button button {
+    border: none;
+    font-size: 15px;
+    color: white;
+    background-color: #292929;
+    padding: 8px 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.image-slider-button button:hover {
+    background-color: #474747;
+}
+
+.project {
+    animation-name: appear-from-bottom;
+    animation-duration: 0.45s;
+}
+
+.project table {
+    width: 100%;
+}
+
+.project td {
+    text-align: left;
+    vertical-align: top;
+    padding: 20px 0;
+}
+
+.project td:nth-child(2) {
+    font-weight: 300;
+}
+
+.project ul {
+    list-style: none;
+}
+
+@keyframes appear-from-bottom {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0 ,0);
+    }
+}
