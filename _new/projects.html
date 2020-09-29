@@ -8,7 +8,9 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/projects.css">
 
-        <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     </head>
@@ -32,9 +34,128 @@
             </nav>
         </section>
 
-        <hr class="stripe-solid">
+        <hr class="stripe-solid" id="back-to-top">
 
         <main>
+
+            <section class="project-button">
+                <h1 class="title">Projects</h1>
+
+                <ul>
+                    <li>
+                        <button type="button"><a href="#website">Website</a></button>
+                    </li>
+                    <li>
+                        <button type="button"><a href="#homeworknotifyer">Homework Notifyer</a></button>
+                    </li>
+                </ul>
+            </section>
+
+            <hr class="stripe-solid" id="website">
+
+            <section class="project">
+                <h1>Website - larsbeijaard.com</h1>
+
+                <section class="image-slider">
+                    <figure>
+                        <img class="id1 header-image" src="files/images/projects/website/header.png" alt="screenshot">
+                        <img class="id1 header-image" src="files/images/projects/website/image-1.png" alt="screenshot">
+                        <img class="id1 header-image" src="files/images/projects/website/image-2.png" alt="screenshot">
+                        <img class="id1 header-image" src="files/images/projects/website/image-3.png" alt="screenshot">
+                    </figure>
+
+                    <section class="image-slider-button">
+                        <button class="previous-image" type="button" onclick="plusDivs(-1, 'id1')"><i class="fa fa-angle-left"></i> previous</button>
+                        <button class="next-image" type="button" onclick="plusDivs(1, 'id1')">next <i class="fa fa-angle-right"></i></button>
+                    </section>
+                </section>
+
+                <table>
+                    <tr>
+                        <td><strong>The Project</strong></td>
+                        <td>
+                            I had very much fun making this portfolio website.<br>
+                            The hard part was deciding what theme I wanted to go for. I think I reworked the style about 3 times.
+                            But after finding the right theme, I went for it.<br><br>
+                            I made this project from scratch with zero idea of how to make a website.<br>
+                            So first, I needed to learn the HTML and CSS language, so I took a free courses at CodeCademy.com.
+                            When I completed those courses I had a pretty good understanding on how to make and design a website.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>What have I learnt?</strong></td>
+                        <td>
+                            As I mentioned earlier, I began with zero knowledge about making a website from scratch.<br>
+                            So I took the free courses there were on CodeCademy.com.<br>
+                            Meaning that I have learned 2 languages, which are HTML and CSS. Besides those 2 languages,
+                            I have learned how to cheat the system.<br>
+                            By that I mean, I have learned how to specifically design
+                            your website with the right HTML elements in order to let Google put your website up front and
+                            above others. Its called 'semantic HTML'.<br>
+                            Its basically using the right elements in your website,
+                            so Google can easily see what content there is on your website.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Languages & Information</strong></td>
+                        <td>
+                            <ul>
+                                <li>Languages: HTML and CSS</li>
+                                <li>Software: Visual Studio Code</li>
+                                <li>Version control: GitHub</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+
+                <button class="back-to-top" type="button"><a href="#back-to-top">BACK TO TOP</a></button>
+            </section>
+
+            <hr class="stripe-solid" id="homeworknotifyer">
+
+            <section class="project">
+                <h1>Discord Bot - HomeworkNotifyer</h1>
+
+                <section class="image-slider">
+                    <figure>
+                        <img class="id2 header-image" src="files/images/projects/homeworknotifyer/header.png" alt="screenshot">
+                        <img class="id2 header-image" src="files/images/projects/homeworknotifyer/image-1.png" alt="screenshot">
+                    </figure>
+
+                    <section class="image-slider-button">
+                        <button class="previous-image" type="button" onclick="plusDivs(-1, 'id2')"><i class="fa fa-angle-left"></i> previous</button>
+                        <button class="next-image" type="button" onclick="plusDivs(1, 'id2')">next <i class="fa fa-angle-right"></i></button>
+                    </section>
+                </section>
+
+                <table>
+                    <tr>
+                        <td><strong>The Project</strong></td>
+                        <td>
+                            lorem ipsum
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>What have I learnt?</strong></td>
+                        <td>
+                            lorem ipsum
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Languages & Information</strong></td>
+                        <td>
+                            <ul>
+                                <li>Languages: lorem ipsum</li>
+                                <li>Software: lorem ipsum</li>
+                                <li>Version control: lorem ipsum</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+
+                <button class="back-to-top" type="button"><a href="#back-to-top">BACK TO TOP</a></button>
+            </section>
+
         </main>
 
         <footer>
@@ -48,6 +169,43 @@
             </section>
 
         </footer>
+
+        <script>
+            // Credits to w3schools
+            let slideIndex = 1;
+
+            // Show each image slider its first image
+            projectID = ['id1', 'id2']
+            for (let i = 0; i < projectID.length; i++) {
+                showDivs(slideIndex, projectID[i])
+            }
+
+            showDivs(slideIndex, ); // Display the first image
+
+            // Go to the next or previous image
+            function plusDivs(n, projectID) {
+                showDivs(slideIndex += n, projectID);
+            }
+
+            function showDivs(n, projectID) {
+                let i;
+                let x = document.getElementsByClassName(projectID); // Get all slider images
+
+                // Start from the end if the image limit will be exceeded or vice versa
+                if (n > x.length) {
+                    slideIndex = 1
+                } else if (n < 1) {
+                    slideIndex = x.length
+                }
+
+                // Hide all the other images
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+
+                x[slideIndex-1].style.display = "block";
+            }
+        </script>
 
     </body>
 
