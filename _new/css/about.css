@@ -1,0 +1,52 @@
+.title {
+    font-size: 20px;
+    padding-bottom: 20px;
+    animation-name: appear-from-bottom;
+    animation-duration: 0.45s;
+}
+
+a {
+    color: #b5b5b5;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #797979;
+}
+
+.about {
+    position: relative;
+    text-align: left;
+    margin-bottom: 35px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    color: #474747;
+    animation-name: appear-from-bottom;
+    animation-duration: 0.45s;
+}
+
+.selfie {
+    position: relative;
+    animation-name: appear-from-bottom;
+    animation-duration: 0.45s;
+}
+
+.selfie img {
+    width: 215px;
+    height: 215px;
+    display: block;
+    margin: 0 auto;
+}
+
+@keyframes appear-from-bottom {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0 ,0);
+    }
+}
