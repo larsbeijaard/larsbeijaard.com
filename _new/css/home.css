@@ -1,0 +1,14 @@
+.credit {
+    text-align: center;
+    color: #b5b5b5;
+}
+
+.credit a {
+    color: #b5b5b5;
+    text-decoration: none;
+}
+
+.credit a:hover {
+    cursor: pointer;
+    color: #797979;
+}
