@@ -101,6 +101,12 @@ footer {
     color: #797979;
 }
 
+@media only screen and (max-width: 600px) {
+    body {
+        width: 95%;
+    }
+}
+
 @keyframes name-entrance {
     from {
         opacity: 0;
