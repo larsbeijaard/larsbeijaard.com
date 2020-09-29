@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 45%;
+    margin: 0 auto;
+    font-family: 'Epilogue', sans-serif;
+    scroll-behavior: smooth;
+}
+
+footer {
+    padding-top: 60px;
+}
+
+#active-page {
+    color: #797979;
+}
+
+.name {
+    position: relative;
+    margin-top: 225px;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 5px;
+    animation-name: name-entrance;
+    animation-duration: 1s;
+}
+
+.cv {
+    position: relative;
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: 2px;
+    animation-name: cv-entrance;
+    animation-duration: 1s;
+}
+
+.nav-bar {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    animation-name: nav-bar-entrance;
+    animation-duration: 0.45s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+.nav-bar ul {
+    list-style: none;
+}
+
+.nav-bar li {
+    display: inline-block;
+    margin: 0 10px;
+    letter-spacing: 3px;
+}
+
+.nav-bar a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-bar a:hover {
+    color: #797979;
+}
+
+.stripe-solid {
+    margin: 60px auto;
+    border: #b5b5b5 solid 1px;
+    animation-name: hr-width-extend;
+    animation-duration: 0.35s;
+}
+
+.footer-contact {
+    font-size: 23px;
+    text-align: center;
+    animation-name: appear-from-bottom;
+    animation-duration: 0.45s;
+    margin-bottom: 60px;
+}
+
+.footer-contact ul {
+    list-style: none;
+}
+
+.footer-contact li {
+    display: inline-block;
+    margin: 0 3px;
+}
+
+.footer-contact a, .cv a {
+    color: #b5b5b5;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.footer-contact a:hover, .cv a:hover {
+    color: #797979;
+}
+
+@keyframes name-entrance {
+    from {
+        opacity: 0;
+        transform: translate3d(-10%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes cv-entrance {
+    from {
+        opacity: 0;
+        transform: translate3d(10%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes nav-bar-entrance {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 60px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+    }
+}
+
+@keyframes appear-from-bottom {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0 ,0);
+    }
+}
+
+@keyframes hr-width-extend {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
