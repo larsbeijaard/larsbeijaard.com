@@ -4,12 +4,21 @@
     <head>
 
         <meta charset="UTF-8">
-        <title>Lars Beijaard | Projects</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/projects.css">
-
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <title>Lars Beijaard | Projects</title>
+
+        <!-- Default page styling -->
+        <link rel="stylesheet" type="text/css" href="css/default.css">
+        <link rel="stylesheet" type="text/css" href="css/multi-use/page-header.css">
+        <link rel="stylesheet" type="text/css" href="css/multi-use/footer-contact.css">
+        <link rel="stylesheet" type="text/css" href="css/multi-use/page-divider.css">
+        <link rel="stylesheet" type="text/css" href="css/multi-use/page-navigator.css">
+
+        <!-- Page related styling -->
+        <link rel="stylesheet" type="text/css" href="css/projects.css">
+
+        <!-- Fonts and icons -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -17,11 +26,13 @@
 
     <body>
 
+        <!-- My name and cv below it -->
         <section>
             <h1 class="name">LARS BEIJAARD</h1>
             <h2 class="cv"><a href="files/CV.pdf" target="_blank">Click here to review my CV.</a></h2>
         </section>
 
+        <!-- Navigation bar with the active page highlighted -->
         <section>
             <nav class="nav-bar">
                 <ul>
@@ -38,24 +49,29 @@
 
         <main>
 
-            <section class="project-button">
+            <!-- Buttons that will scroll to the correct project (easy navigation) -->
+            <section class="nav-section">
                 <h1 class="title">Projects</h1>
 
                 <ul>
+                    <!-- LarsBeijaard.com project -->
                     <li>
-                        <a href="#website"><button type="button">Website</button></a>
+                        <a href="#website"><button type="button"><i class="fa fa-internet-explorer"></i> LARSBEIJAARD.COM</button></a>
                     </li>
+                    <!-- HomeworkNotifyer project -->
                     <li>
-                        <a href="#homeworknotifyer"><button type="button">Homework Notifyer</button></a>
+                        <a href="#homeworknotifyer"><button type="button"><i class="fa fa-android"></i> HOMEWORK NOTIFYER</button></a>
                     </li>
                 </ul>
             </section>
 
             <hr class="stripe-solid" id="website">
 
+            <!-- LarsBeijaard.com project -->
             <section class="project">
-                <h1>Website - larsbeijaard.com</h1>
+                <h1>LarsBeijaard.com</h1>
 
+                <!-- Images used for the image slider -->
                 <section class="image-slider">
                     <figure>
                         <img class="id1 header-image" src="files/images/projects/website/header.png" alt="screenshot">
@@ -64,6 +80,7 @@
                         <img class="id1 header-image" src="files/images/projects/website/image-3.png" alt="screenshot">
                     </figure>
 
+                    <!-- Buttons to see the previous or next image in the image slider -->
                     <section class="image-slider-button">
                         <button class="previous-image" type="button" onclick="plusDivs(-1, 'id1')"><i class="fa fa-angle-left"></i> previous</button>
                         <button class="next-image" type="button" onclick="plusDivs(1, 'id1')">next <i class="fa fa-angle-right"></i></button>
@@ -72,6 +89,7 @@
 
                 <table>
                     <tr>
+                        <!-- About the project -->
                         <td><strong>The Project</strong></td>
                         <td>
                             I had very much fun making this portfolio website.<br>
@@ -83,6 +101,7 @@
                         </td>
                     </tr>
                     <tr>
+                        <!-- What have I learnt in this project -->
                         <td><strong>What have I learnt?</strong></td>
                         <td>
                             As I mentioned earlier, I began with zero knowledge about making a website from scratch.<br>
@@ -97,6 +116,7 @@
                         </td>
                     </tr>
                     <tr>
+                        <!-- The programming languages and other information used in this project -->
                         <td><strong>Languages & Information</strong></td>
                         <td>
                             <ul>
@@ -106,6 +126,13 @@
                             </ul>
                         </td>
                     </tr>
+                    <tr>
+                        <!-- GitHub link to project if its open source -->
+                        <td><strong>Open source</strong></td>
+                        <td>
+                            <a class="source-code-link" href="https://github.com/larsbeijaard/larsbeijaard.com" target="_blank">See source code</a>
+                        </td>
+                    </tr>
                 </table>
 
                 <a href="#back-to-top"><button class="back-to-top" type="button">BACK TO TOP</button></a>
@@ -113,15 +140,18 @@
 
             <hr class="stripe-solid" id="homeworknotifyer">
 
+            <!-- HomeworkNotifyer project -->
             <section class="project">
-                <h1>Discord Bot - HomeworkNotifyer</h1>
+                <h1>HomeworkNotifyer</h1>
 
+                <!-- Images used for the image slider -->
                 <section class="image-slider">
                     <figure>
                         <img class="id2 header-image" src="files/images/projects/homeworknotifyer/header.png" alt="screenshot">
                         <img class="id2 header-image" src="files/images/projects/homeworknotifyer/image-1.png" alt="screenshot">
                     </figure>
 
+                    <!-- Buttons to see the previous or next image in the image slider -->
                     <section class="image-slider-button">
                         <button class="previous-image" type="button" onclick="plusDivs(-1, 'id2')"><i class="fa fa-angle-left"></i> previous</button>
                         <button class="next-image" type="button" onclick="plusDivs(1, 'id2')">next <i class="fa fa-angle-right"></i></button>
@@ -130,25 +160,35 @@
 
                 <table>
                     <tr>
+                        <!-- About the project -->
                         <td><strong>The Project</strong></td>
                         <td>
                             lorem ipsum
                         </td>
                     </tr>
                     <tr>
+                        <!-- What have I learnt in this project -->
                         <td><strong>What have I learnt?</strong></td>
                         <td>
                             lorem ipsum
                         </td>
                     </tr>
                     <tr>
+                        <!-- The programming languages and other information used in this project -->
                         <td><strong>Languages & Information</strong></td>
                         <td>
                             <ul>
-                                <li>Languages: lorem ipsum</li>
-                                <li>Software: lorem ipsum</li>
-                                <li>Version control: lorem ipsum</li>
+                                <li>Languages: x</li>
+                                <li>Software: x</li>
+                                <li>Version control: x</li>
                             </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- GitHub link to project if its open source -->
+                        <td><strong>Open source</strong></td>
+                        <td>
+                            <a class="source-code-link" href="https://github.com/larsbeijaard/homeworknotifyer" target="_blank">See source code</a>
                         </td>
                     </tr>
                 </table>
@@ -160,10 +200,14 @@
 
         <footer>
 
+            <!-- Small contact options, shown as icons -->
             <section class="footer-contact">
                 <ul>
+                    <!-- GitHub profile -->
                     <li><a href="https://github.com/larsbeijaard" target="_blank"><i class="fa fa-github"></i></a></li>
+                    <!-- LinkedIn profile -->
                     <li><a href="https://www.linkedin.com/in/lars-beijaard-89084b150/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <!-- Email -->
                     <li><a href="mailto: larsbeijaard@outlook.com"><i class="fa fa-envelope"></i></a></li>
                 </ul>
             </section>
