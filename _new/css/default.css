@@ -12,13 +12,14 @@ body {
     width: 45%;
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
+    font-weight: 200;
 }
 
 footer {
     padding-top: 60px;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1115px) {
     body {
         width: 95%;
     }

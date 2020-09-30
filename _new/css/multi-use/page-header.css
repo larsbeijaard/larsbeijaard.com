@@ -51,7 +51,7 @@
     color: #797979;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1115px) {
     .nav-bar li {
         display: block;
         margin: 10px 0;
