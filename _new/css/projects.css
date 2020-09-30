@@ -8,6 +8,7 @@
 .header-image {
     width: 100%;
     height: auto;
+    border-radius: 5px;
 }
 
 .image-slider {
@@ -23,6 +24,7 @@
 
 .image-slider-button button {
     border: none;
+    border-radius: 5px;
     font-size: 15px;
     color: white;
     background-color: #292929;
@@ -41,6 +43,10 @@
     animation-duration: 0.45s;
 }
 
+.project h1 {
+    padding-bottom: 20px;
+}
+
 .project table {
     width: 100%;
 }
@@ -55,12 +61,12 @@
     width: 15%;
 }
 
-.credit {
+.link {
     color: #797979;
     text-decoration: none;
 }
 
-.credit:hover {
+.link:hover {
     cursor: pointer;
     color: #b5b5b5;
 }
@@ -95,6 +101,7 @@
 .back-to-top {
     float: right;
     border: none;
+    border-radius: 5px;
     color: white;
     background-color: #b5b5b5;
     cursor: pointer;
