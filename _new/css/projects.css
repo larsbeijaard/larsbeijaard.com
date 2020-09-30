@@ -5,20 +5,6 @@
     animation-duration: 0.45s;
 }
 
-.back-to-top {
-    background-color: #b5b5b5;
-    float: right;
-}
-
-.back-to-top a {
-    color: #292929;
-    text-decoration: none;
-}
-
-.back-to-top:hover {
-    background-color: #cfcfcf;
-}
-
 .project {
     animation-name: appear-from-bottom;
     animation-duration: 0.45s;
@@ -81,6 +67,29 @@
 
 .project ul {
     list-style: none;
+}
+
+.source-code-link {
+    text-decoration: none;
+    color: #5050db;
+}
+
+.source-code-link:hover {
+    border-bottom: 1px solid #5050db;
+}
+
+.back-to-top {
+    float: right;
+    border: none;
+    color: white;
+    background-color: #b5b5b5;
+    cursor: pointer;
+    padding: 8px 30px;
+    font-size: 15px;
+}
+
+.back-to-top:hover {
+    background-color: #cfcfcf;
 }
 
 @keyframes appear-from-bottom {
