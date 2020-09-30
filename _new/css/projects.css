@@ -5,15 +5,6 @@
     animation-duration: 0.45s;
 }
 
-.project {
-    animation-name: appear-from-bottom;
-    animation-duration: 0.45s;
-}
-
-.project h1 {
-    margin-bottom: 20px;
-}
-
 .header-image {
     width: 100%;
     height: auto;
@@ -60,13 +51,36 @@
     padding: 20px 0;
 }
 
-.project td:nth-child(2) {
-    font-weight: 300;
-    width: 85%;
+.project-table td:nth-child(1) {
+    width: 15%;
 }
 
-.project ul {
-    list-style: none;
+.credit {
+    color: #797979;
+    text-decoration: none;
+}
+
+.credit:hover {
+    cursor: pointer;
+    color: #b5b5b5;
+}
+
+.project-information {
+    width: 100%;
+}
+
+.project-information th {
+    line-height: 20px;
+    background-color: #d6d6d6;
+}
+
+.project-information td {
+    width: auto;
+    padding-left: 3px;
+}
+
+.project-information tr:nth-child(even) {
+    background-color: #f5f5f5;
 }
 
 .source-code-link {
