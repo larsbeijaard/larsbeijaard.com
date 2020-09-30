@@ -5,11 +5,13 @@
 }
 
 .categories {
-    font-weight: 300;
-    font-size: 15px;
+    position: relative;
+    text-align: left;
     margin-bottom: 35px;
-    animation-name: appear-from-bottom;
-    animation-duration: 0.45s;
+    line-height: 25px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    color: #474747;
 }
 
 .part {
