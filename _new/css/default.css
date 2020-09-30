@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 45%;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer {
+    padding-top: 60px;
+}
+
+@media only screen and (max-width: 750px) {
+    body {
+        width: 95%;
+    }
+}

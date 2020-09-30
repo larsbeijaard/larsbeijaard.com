@@ -1,0 +1,16 @@
+.stripe-solid {
+    margin: 60px auto;
+    border: #b5b5b5 solid 1px;
+    animation-name: hr-width-extend;
+    animation-duration: 0.35s;
+}
+
+@keyframes hr-width-extend {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}

@@ -29,8 +29,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -68,13 +68,15 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -90,7 +92,8 @@
       <updated>1601329331245</updated>
       <workItem from="1601329332360" duration="9098000" />
       <workItem from="1601380252262" duration="4205000" />
-      <workItem from="1601387492183" duration="13411000" />
+      <workItem from="1601387492183" duration="22704000" />
+      <workItem from="1601461524154" duration="6981000" />
     </task>
     <servers />
   </component>
@@ -118,10 +121,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/1920.-418.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1601387612344" />
-    <state x="676" y="235" width="992" height="708" key="SettingsEditor" timestamp="1601335008920">
+    <state x="676" y="235" width="992" height="708" key="SettingsEditor" timestamp="1601403392444">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="676" y="235" width="992" height="708" key="SettingsEditor/1920.-418.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1601335008920" />
+    <state x="676" y="235" width="992" height="708" key="SettingsEditor/1920.-418.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1601403392444" />
+    <state x="1953" y="-443" width="1096" height="1028" maximized="true" key="dock-window-1" timestamp="1601406040044">
+      <screen x="1920" y="-418" width="1080" height="1880" />
+    </state>
+    <state x="1953" y="-443" width="1096" height="1028" maximized="true" key="dock-window-1/1920.-418.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1601406040044" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1601334898460">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -1,0 +1,38 @@
+.footer-contact {
+    font-size: 23px;
+    text-align: center;
+    animation-name: appear-from-bottom;
+    animation-duration: 0.45s;
+    margin-bottom: 60px;
+}
+
+.footer-contact ul {
+    list-style: none;
+}
+
+.footer-contact li {
+    display: inline-block;
+    margin: 0 3px;
+}
+
+.footer-contact a, .cv a {
+    color: #b5b5b5;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.footer-contact a:hover, .cv a:hover {
+    color: #797979;
+}
+
+@keyframes appear-from-bottom {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0 ,0);
+    }
+}

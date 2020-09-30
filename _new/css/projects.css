@@ -1,45 +1,8 @@
-html {
-    scroll-behavior: smooth;
-}
-
 .title {
     font-size: 20px;
     padding-bottom: 20px;
     animation-name: appear-from-bottom;
     animation-duration: 0.45s;
-}
-
-.project-button {
-    position: relative;
-    width: 100%;
-    animation-name: appear-from-bottom;
-    animation-duration: 0.45s;
-}
-
-.project-button a {
-    color: white;
-    text-decoration: none;
-}
-
-.project-button li {
-    display: inline-block;
-    margin: 5px 20px;
-}
-
-.project-button button, .back-to-top {
-    border: none;
-    cursor: pointer;
-    padding: 8px 30px;
-    font-size: 15px;
-}
-
-.project-button button {
-    color: white;
-    background-color: #292929;
-}
-
-.project-button button:hover {
-    background-color: #474747;
 }
 
 .back-to-top {
@@ -113,6 +76,7 @@ html {
 
 .project td:nth-child(2) {
     font-weight: 300;
+    width: 85%;
 }
 
 .project ul {
