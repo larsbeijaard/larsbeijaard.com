@@ -1,6 +1,8 @@
 .credit {
     text-align: center;
     color: #b5b5b5;
+    animation-name: appear-from-bottom;
+    animation-duration: 0.45s;
 }
 
 .credit a {
@@ -11,4 +13,16 @@
 .credit a:hover {
     cursor: pointer;
     color: #797979;
+}
+
+@keyframes appear-from-bottom {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0 ,0);
+    }
 }
