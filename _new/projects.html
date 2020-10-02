@@ -62,6 +62,10 @@
                     <li>
                         <a href="#ftb"><button type="button"><i class="fa fa-gamepad"></i> FEED THE BEAST</button></a>
                     </li>
+                    <!-- Save and Load project -->
+                    <li>
+                        <a href="#save-load"><button type="button"><i class="fa fa-code"></i> SAVE AND LOAD</button></a>
+                    </li>
                     <!-- HomeworkNotifyer project -->
                     <li>
                         <a href="#homeworknotifyer"><button type="button"><i class="fa fa-android"></i> HOMEWORK NOTIFYER</button></a>
@@ -69,10 +73,6 @@
                     <!-- House Party project -->
                     <li>
                         <a href="#house-party"><button type="button"><i class="fa fa-terminal"></i> HOUSE PARTY</button></a>
-                    </li>
-                    <!-- Coming soon project -->
-                    <li>
-                        <a href="#"><button type="button"><i class="fa fa-calendar"></i> COMING SOON...</button></a>
                     </li>
                 </ul>
             </section>
@@ -305,6 +305,109 @@
                                     </td>
                                     <td>
                                         <a class="source-code-link" href="https://github.com/larsbeijaard/Weekproject/blob/78833896e3e3cbc8aab445a83d8b73098fa58738/Assets/Scripts/Tom/Container.cs#L13" target="_blank">Snippet</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- GitHub link to project if its open source -->
+                        <td><strong>Open source</strong></td>
+                        <td>
+                            <a class="source-code-link" href="https://github.com/larsbeijaard/Weekproject" target="_blank">See source code</a>
+                        </td>
+                    </tr>
+                </table>
+
+                <a href="#"><button class="back-to-top" type="button">BACK TO TOP</button></a>
+            </section>
+
+            <hr class="stripe-solid" id="save-load">
+
+            <!-- Save and Load project -->
+            <section class="project">
+                <h1>Save and Load</h1>
+
+                <!-- Images used for the image slider -->
+                <section class="image-slider">
+                    <figure>
+                        <img class="id5 header-image" src="files/images/projects/save-load/header.jpg" alt="screenshot">
+                        <img class="id5 header-image" src="files/images/projects/save-load/image-1.jpg" alt="screenshot">
+                        <img class="id5 header-image" src="files/images/projects/save-load/image-2.jpg" alt="screenshot">
+                    </figure>
+
+                    <!-- Buttons to see the previous or next image in the image slider -->
+                    <section class="image-slider-button">
+                        <button class="previous-image" type="button" onclick="plusDivs(-1, 'id5')"><i class="fa fa-angle-left"></i> previous</button>
+                        <button class="next-image" type="button" onclick="plusDivs(1, 'id5')">next <i class="fa fa-angle-right"></i></button>
+                    </section>
+                </section>
+
+                <table class="project-table">
+                    <tr>
+                        <!-- About the project -->
+                        <td><strong>The Project</strong></td>
+                        <td>
+                            I was using the save and load functionality quite often in my projects. But I could not implement one in the other,
+                            so I had to write a save and load system over and over again just to fit that project.<br>
+                            That is why I made this, this save and load system could be imported into every project that needs to have some data saved and loaded.
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- What have I learnt in this project -->
+                        <td><strong>What have I learnt?</strong></td>
+                        <td>
+                            I have learned a bit on how to use
+                            <a class="link" href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/", target="_blank">T variables</a>
+                            , because you can not use a struct as parameter. I have also learnt that you need to avoid
+                            <a class="link" href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/", target="_blank">T variables</a>
+                            as much as you can, because they can cause confusion in your projects. They can, because they can be every kind of variable
+                            (class, float, third party variables, etc), which could make them hard to read without good commenting.
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- The programming languages and other information used in this project -->
+                        <td><strong>Languages & Information</strong></td>
+                        <td>
+                            <table class="project-information">
+                                <tr>
+                                    <th>Languages</th>
+                                    <th>Software / Code Editor</th>
+                                    <th>Version Control</th>
+                                    <th>Team</th>
+                                </tr>
+                                <tr>
+                                    <td>C Sharp</td>
+                                    <td>Visual Studio</td>
+                                    <td>GitHub Desktop</td>
+                                    <td>Solo</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- Code snippets where I am proud of -->
+                    <tr>
+                        <td><strong>Code snippets</strong></td>
+                        <td>
+                            <table class="code-snippets">
+                                <tr>
+                                    <th>Explanation</th>
+                                    <th>Link to snippet</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Saving all of the data from the struct
+                                    </td>
+                                    <td>
+                                        <a class="source-code-link" href="https://github.com/larsbeijaard/SaveAndLoad/blob/43cf601448ab36423d9c15432321f9971b8a6684/Assets/Scripts/Utilities/SaveFiles.cs#L39" target="_blank">Snippet</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Loading all of the data from the struct
+                                    </td>
+                                    <td>
+                                        <a class="source-code-link" href="https://github.com/larsbeijaard/SaveAndLoad/blob/43cf601448ab36423d9c15432321f9971b8a6684/Assets/Scripts/Utilities/SaveFiles.cs#L59" target="_blank">Snippet</a>
                                     </td>
                                 </tr>
                             </table>
@@ -575,7 +678,13 @@
             let slideIndex = 1;
 
             // Show each image slider its first image
-            projectID = ['id1', 'id2', 'id4']
+            /*
+            ID1 = Website
+            ID2 = HomeworkNotifyer
+            ID4 = Feed the beast
+            ID5 = Save and Load
+            */
+            projectID = ['id1', 'id2', 'id4', 'id5']
             for (let i = 0; i < projectID.length; i++) {
                 showDivs(slideIndex, projectID[i])
             }
