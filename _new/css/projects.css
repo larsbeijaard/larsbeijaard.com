@@ -3,15 +3,17 @@
     text-align: center;
 }
 
-.nav-section button {
-    background-color: transparent;
-    border: none;
+.nav-section {
+    padding: 0;
+    margin: 0;
+}
+
+.nav-section a {
+    text-decoration: none;
     color: black;
 }
 
-.nav-section button:hover {
-    background-color: transparent;
-    border: none;
+.nav-section a:hover {
     color: #797979;
 }
 
