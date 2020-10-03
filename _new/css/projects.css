@@ -8,6 +8,13 @@
     margin: 0;
 }
 
+.nav-section td {
+    width: auto;
+    text-align: left;
+    padding: 10px;
+    margin-left: 3px;
+}
+
 .nav-section a {
     text-decoration: none;
     color: black;
@@ -104,7 +111,7 @@
     background-color: #d6d6d6;
 }
 
-.project-information td, .code-snippets td, .nav-section td {
+.project-information td, .code-snippets td {
     width: auto;
     padding-left: 3px;
 }
