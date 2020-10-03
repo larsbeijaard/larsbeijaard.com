@@ -67,21 +67,6 @@
       <recent name="D:\Program\Xampps\htdocs\larsbeijaard.com\_new\files" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -93,7 +78,11 @@
       <workItem from="1601329332360" duration="9098000" />
       <workItem from="1601380252262" duration="4205000" />
       <workItem from="1601387492183" duration="22704000" />
-      <workItem from="1601461524154" duration="6981000" />
+      <workItem from="1601461524154" duration="17290000" />
+      <workItem from="1601496148417" duration="5599000" />
+      <workItem from="1601551999792" duration="3863000" />
+      <workItem from="1601627240705" duration="3044000" />
+      <workItem from="1601748552629" duration="952000" />
     </task>
     <servers />
   </component>
@@ -125,10 +114,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="676" y="235" width="992" height="708" key="SettingsEditor/1920.-418.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1601403392444" />
-    <state x="1953" y="-443" width="1096" height="1028" maximized="true" key="dock-window-1" timestamp="1601406040044">
+    <state x="1953" y="-443" width="1096" height="1028" maximized="true" key="dock-window-1" timestamp="1601555587773">
       <screen x="1920" y="-418" width="1080" height="1880" />
     </state>
-    <state x="1953" y="-443" width="1096" height="1028" maximized="true" key="dock-window-1/1920.-418.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1601406040044" />
+    <state x="1953" y="-443" width="1096" height="1028" maximized="true" key="dock-window-1/1920.-418.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1601555587773" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1601334898460">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
