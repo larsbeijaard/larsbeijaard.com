@@ -66,7 +66,7 @@
                         <td><a href="#house-party">House Party</a></td>
                     </tr>
                     <tr>
-                        <td></td>
+                        <td><a href="#pong">Pong</a></td>
                         <td></td>
                         <td><a href="#website">LarsBeijaard.com</a></td>
                     </tr>
@@ -187,6 +187,99 @@
                                     </td>
                                     <td>
                                         <a class="source-code-link" href="https://github.com/larsbeijaard/Weekproject/blob/78833896e3e3cbc8aab445a83d8b73098fa58738/Assets/Scripts/Tom/Container.cs#L13" target="_blank">Snippet</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- GitHub link to project if its open source -->
+                        <td><strong>Open source</strong></td>
+                        <td>
+                            <a class="source-code-link" href="https://github.com/larsbeijaard/Weekproject" target="_blank">See source code</a>
+                        </td>
+                    </tr>
+                </table>
+
+                <a href="#"><button class="back-to-top" type="button">BACK TO TOP</button></a>
+            </section>
+
+            <hr class="stripe-solid" id="pong">
+
+            <!-- Pong project -->
+            <section class="project">
+                <h1>Feed The Beast</h1>
+
+                <!-- Images used for the image slider -->
+                <section class="image-slider">
+                    <figure>
+                        <img class="id6 header-image" src="files/images/projects/pong/header.jpg" alt="screenshot">
+                        <img class="id6 header-image" src="files/images/projects/pong/image-1.jpg" alt="screenshot">
+                    </figure>
+
+                    <!-- Buttons to see the previous or next image in the image slider -->
+                    <section class="image-slider-button">
+                        <button class="previous-image" type="button" onclick="plusDivs(-1, 'id6')"><i class="fa fa-angle-left"></i> previous</button>
+                        <button class="next-image" type="button" onclick="plusDivs(1, 'id6')">next <i class="fa fa-angle-right"></i></button>
+                    </section>
+                </section>
+
+                <table class="project-table">
+                    <tr>
+                        <!-- About the project -->
+                        <td><strong>The Project</strong></td>
+                        <td>
+                            This was the first project I made outside of school. I remember struggling with making the
+                            paddles move individually from each other, since it was a local multiplayer game. The reason
+                            I chose to remake Pong was because Pong was also the very first game ever created. So I though,
+                            my first self-made game is going to be the remake of the first game created.
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- What have I learnt in this project -->
+                        <td><strong>What have I learnt?</strong></td>
+                        <td>
+                            I learned pretty much everything I did. I learned how to setup controls for a local multiplayer
+                            game. Other than that I've learned how to keep track of score and declare a winner if a certain
+                            amount is reached. And I also learned how to implement sound effects into the game to make it more fun.
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- The programming languages and other information used in this project -->
+                        <td><strong>Languages & Information</strong></td>
+                        <td>
+                            <table class="project-information">
+                                <tr>
+                                    <th>Languages</th>
+                                    <th>Software / Code Editor</th>
+                                    <th>Version Control</th>
+                                    <th>Team</th>
+                                </tr>
+                                <tr>
+                                    <td>C Sharp</td>
+                                    <td>Visual Studio</td>
+                                    <td>GitHub Desktop</td>
+                                    <td>Lars Beijaard</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- Code snippets where I am proud of -->
+                    <tr>
+                        <td><strong>Code snippets</strong></td>
+                        <td>
+                            <table class="code-snippets">
+                                <tr>
+                                    <th>Explanation</th>
+                                    <th>Link to snippet</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Calculate the Y axis for the ball. The close the ball hits the paddle in its center, the more
+                                        centered the ball on the Y axis is going to be
+                                    </td>
+                                    <td>
+                                        <a class="source-code-link" href="https://github.com/larsbeijaard/Pong/blob/b8d5a364867b512d21e08924fce93e6f5bbeb58d/Assets/_Scripts/Ingame/BallMovement.cs#L62" target="_blank">Snippet</a>
                                     </td>
                                 </tr>
                             </table>
@@ -682,7 +775,7 @@
             ID4 = Feed the beast
             ID5 = Save and Load
             */
-            projectID = ['id1', 'id2', 'id4', 'id5']
+            projectID = ['id1', 'id2', 'id4', 'id5', 'id6']
             for (let i = 0; i < projectID.length; i++) {
                 showDivs(slideIndex, projectID[i])
             }
