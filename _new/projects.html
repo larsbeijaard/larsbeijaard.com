@@ -70,6 +70,11 @@
                         <td></td>
                         <td><a href="#website">LarsBeijaard.com</a></td>
                     </tr>
+                    <tr>
+                        <td><a href="#project-water">Project: Water</a></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
                 </table>
 
 
@@ -197,6 +202,114 @@
                         <td><strong>Open source</strong></td>
                         <td>
                             <a class="source-code-link" href="https://github.com/larsbeijaard/Weekproject" target="_blank">See source code</a>
+                        </td>
+                    </tr>
+                </table>
+
+                <a href="#"><button class="back-to-top" type="button">BACK TO TOP</button></a>
+            </section>
+
+            <hr class="stripe-solid" id="project-water">
+
+            <!-- Project: Water project -->
+            <section class="project">
+                <h1>Project: Water</h1>
+
+                <!-- Images used for the image slider -->
+                <section class="image-slider">
+                    <figure>
+                        <img class="id7 header-image" src="files/images/projects/project-water/header.jpg" alt="screenshot">
+                        <img class="id7 header-image" src="files/images/projects/project-water/image-1.jpg" alt="screenshot">
+                        <img class="id7 header-image" src="files/images/projects/project-water/image-2.jpg" alt="screenshot">
+                    </figure>
+
+                    <!-- Buttons to see the previous or next image in the image slider -->
+                    <section class="image-slider-button">
+                        <button class="previous-image" type="button" onclick="plusDivs(-1, 'id7')"><i class="fa fa-angle-left"></i> previous</button>
+                        <button class="next-image" type="button" onclick="plusDivs(1, 'id7')">next <i class="fa fa-angle-right"></i></button>
+                    </section>
+                </section>
+
+                <table class="project-table">
+                    <tr>
+                        <!-- About the project -->
+                        <td><strong>The Project</strong></td>
+                        <td>
+                            I was asked by a Dutch museum called
+                            '<a class="link" href="https://www.watermuseum.nl/" target="_blank">Nederlands Watermuseum</a>'
+                            to make a game with water as theme. And I accepted the request to make a game for that museum.<br>
+                            I was assigned with four other people, which of one was a game developer and the other three
+                            were game artists. Sadly, after a while working with each other, one artists did quit the project.
+                            So we were left with two artists and some unfinished work.<br><br>
+                            We had the following idea in mind for the game: the ocean and seas contain a lot of
+                            plastic and micro plastic objects and those are pretty bad for the environment.<br>
+                            So what you had to do is: each player has its own boat and there are fish swimming right
+                            below the boat, your goal is go collect as many fish you could before the timer runs out.
+                            After the timer expired you were teleported into the cleaning area where you had to remove all
+                            the plastic and micro plastic from the fish, also while a timer is running. The player with
+                            the most amount of clean fish wins the game.
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- What have I learnt in this project -->
+                        <td><strong>What have I learnt?</strong></td>
+                        <td>
+                            I have learnt the Unity touch input system, because we had to work on a
+                            <a class="link" href="https://www.ata-tech.nl/en/touch-table/" target="_blank">Touch table</a>
+                            . A touch table is basically a big horizontal touch screen, which you can use for all sorts
+                            of things, which include games.<br><br>
+                            I have also learnt that having fallbacks is a must when fifty finger can touch the board at once.
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- The programming languages and other information used in this project -->
+                        <td><strong>Languages & Information</strong></td>
+                        <td>
+                            <table class="project-information">
+                                <tr>
+                                    <th>Languages</th>
+                                    <th>Software / Code Editor</th>
+                                    <th>Version Control</th>
+                                    <th>Team</th>
+                                </tr>
+                                <tr>
+                                    <td>C Sharp</td>
+                                    <td>Visual Studio</td>
+                                    <td>GitHub Desktop</td>
+                                    <td>Lars Beijaard</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Trello</td>
+                                    <td>Hugo Morrits</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- Code snippets where I am proud of -->
+                    <tr>
+                        <td><strong>Code snippets</strong></td>
+                        <td>
+                            <table class="code-snippets">
+                                <tr>
+                                    <th>Explanation</th>
+                                    <th>Link to snippet</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Redacted due to closed source.
+                                    </td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- GitHub link to project if its open source -->
+                        <td><strong>Open source</strong></td>
+                        <td>
+                            <p>Closed source.</p>
                         </td>
                     </tr>
                 </table>
@@ -775,7 +888,7 @@
             ID4 = Feed the beast
             ID5 = Save and Load
             */
-            projectID = ['id1', 'id2', 'id4', 'id5', 'id6']
+            projectID = ['id1', 'id2', 'id4', 'id5', 'id6', 'id7']
             for (let i = 0; i < projectID.length; i++) {
                 showDivs(slideIndex, projectID[i])
             }
