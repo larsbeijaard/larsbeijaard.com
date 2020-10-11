@@ -83,6 +83,11 @@
       <workItem from="1601551999792" duration="3863000" />
       <workItem from="1601627240705" duration="3044000" />
       <workItem from="1601748552629" duration="3098000" />
+      <workItem from="1601846527253" duration="600000" />
+      <workItem from="1601847181586" duration="8000" />
+      <workItem from="1601993901036" duration="533000" />
+      <workItem from="1601994700870" duration="2403000" />
+      <workItem from="1602104481575" duration="42000" />
     </task>
     <servers />
   </component>
@@ -102,6 +107,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="640" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1601994412875">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/1920.-418.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1601994412875" />
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601387888614">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
