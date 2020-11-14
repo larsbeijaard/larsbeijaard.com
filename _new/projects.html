@@ -67,7 +67,7 @@
                     </tr>
                     <tr>
                         <td><a href="#pong">Pong</a></td>
-                        <td></td>
+                        <td><a href="#among-us">Among Us</a></td>
                         <td><a href="#website">LarsBeijaard.com</a></td>
                     </tr>
                     <tr>
@@ -631,6 +631,105 @@
                 <a href="#"><button class="back-to-top" type="button">BACK TO TOP</button></a>
             </section>
 
+            <hr class="stripe-solid" id="among-us">
+
+            <!-- Among Us project -->
+            <section class="project">
+                <h1>Among Us</h1>
+
+                <!-- Images used for the image slider -->
+                <section class="image-slider">
+                    <figure>
+                        <img class="id8 header-image" src="files/images/projects/among-us-bot/header.jpg" alt="screenshot">
+                        <img class="id8 header-image" src="files/images/projects/among-us-bot/image-1.jpg" alt="screenshot">
+                        <img class="id8 header-image" src="files/images/projects/among-us-bot/image-2.jpg" alt="screenshot">
+                        <img class="id8 header-image" src="files/images/projects/among-us-bot/image-3.jpg" alt="screenshot">
+                        <img class="id8 header-image" src="files/images/projects/among-us-bot/image-4.jpg" alt="screenshot">
+                    </figure>
+
+                    <!-- Buttons to see the previous or next image in the image slider -->
+                    <section class="image-slider-button">
+                        <button class="previous-image" type="button" onclick="plusDivs(-1, 'id8')"><i class="fa fa-angle-left"></i> previous</button>
+                        <button class="next-image" type="button" onclick="plusDivs(1, 'id8')">next <i class="fa fa-angle-right"></i></button>
+                    </section>
+                </section>
+
+                <table class="project-table">
+                    <tr>
+                        <!-- About the project -->
+                        <td><strong>The Project</strong></td>
+                        <td>
+                            <a class="link" href="http://www.innersloth.com/gameAmongUs.php" target="_blank">Among Us</a>
+                            is a big success. Many people around the globe are playing this game.<br>
+                            To make this game more fun is to play it with your friends in a Discord call. But, since you
+                            are not allowed to talk mid-game you have to mute and unmute yourself continuously, which
+                            could be quite annoying at some point. So I made it that if you (the part leader) mutes/unmutes
+                            itself, the whole voice chats gets muted/unmuted as well. So I made a
+                            <a class="link" href="https://discord.com/developers/docs/intro" target="_blank">Discord Bot</a>
+                            for that
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- What have I learnt in this project -->
+                        <td><strong>What have I learnt?</strong></td>
+                        <td>
+                            I chose to work with Python on this project. Creating the bot in Python was difficult in the
+                            beginning, since there is a lot new to learn. But I found it out eventually. And now I have
+                            a working application in Python.
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- The programming languages and other information used in this project -->
+                        <td><strong>Languages & Information</strong></td>
+                        <td>
+                            <table class="project-information">
+                                <tr>
+                                    <th>Languages</th>
+                                    <th>Software / Code Editor</th>
+                                    <th>Version Control</th>
+                                    <th>Team</th>
+                                </tr>
+                                <tr>
+                                    <td>Python</td>
+                                    <td>PyCharm</td>
+                                    <td>GitHub Desktop</td>
+                                    <td>Solo</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- Code snippets where I am proud of -->
+                    <tr>
+                        <td><strong>Code snippets</strong></td>
+                        <td>
+                            <table class="code-snippets">
+                                <tr>
+                                    <th>Explanation</th>
+                                    <th>Link to snippet</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Loading in cog extensions, so therefore creating cogs aka modules is a lot easier.
+                                    </td>
+                                    <td>
+                                        <a class="source-code-link" href="https://github.com/OpenSource-DBots/among-us-bot/blob/51e077f994a5cce6ad1871b0bb0b768aba7362ad/bot.py#L71" target="_blank">Snippet</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- GitHub link to project if its open source -->
+                        <td><strong>Open source</strong></td>
+                        <td>
+                            <a class="source-code-link" href="https://github.com/OpenSource-DBots/among-us-bot" target="_blank">See source code</a>
+                        </td>
+                    </tr>
+                </table>
+
+                <a href="#"><button class="back-to-top" type="button">BACK TO TOP</button></a>
+            </section>
+
             <hr class="stripe-solid" id="house-party">
 
             <!-- House Party project -->
@@ -888,7 +987,7 @@
             ID4 = Feed the beast
             ID5 = Save and Load
             */
-            projectID = ['id1', 'id2', 'id4', 'id5', 'id6', 'id7']
+            projectID = ['id1', 'id2', 'id4', 'id5', 'id6', 'id7', 'id8']
             for (let i = 0; i < projectID.length; i++) {
                 showDivs(slideIndex, projectID[i])
             }

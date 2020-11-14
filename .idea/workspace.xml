@@ -27,7 +27,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../NatuurlijkGroeneveld" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/_new" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -47,6 +47,7 @@
       <workItem from="1600676489963" duration="589000" />
       <workItem from="1600790984917" duration="14000" />
       <workItem from="1601035246067" duration="413000" />
+      <workItem from="1605394579596" duration="22000" />
     </task>
     <servers />
   </component>
@@ -54,9 +55,9 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1601035656995">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1605394600709">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/1920.-418.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1601035656995" />
+    <state x="740" y="274" key="FileChooserDialogImpl/1920.-418.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1605394600709" />
   </component>
 </project>
