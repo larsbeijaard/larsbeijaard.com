@@ -1,41 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
     <head>
+
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- Links to CSS files -->
+        <title>Lars Beijaard</title>
+
+        <!-- Default page styling -->
         <link rel="stylesheet" type="text/css" href="css/default.css">
-        <link rel="stylesheet" type="text/css" href="css/home/style.css">
+        <link rel="stylesheet" type="text/css" href="css/multi-use/page-header.css">
+        <link rel="stylesheet" type="text/css" href="css/multi-use/footer-contact.css">
+        <link rel="stylesheet" type="text/css" href="css/multi-use/page-divider.css">
 
-        <!-- Links to other files -->
-        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet"> 
+        <!-- Page related styling -->
+        <link rel="stylesheet" type="text/css" href="css/home.css">
 
-        <title>Lars Beijaard | HOME</title>
+        <!-- Fonts and icons -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     </head>
 
     <body>
-        <!-- Navigation bar -->
-        <nav class="nav-bar">
-            <ul>
-                <!-- 'active-page' gets highlighted in the CSS so you know you're on this current page -->
-                <li id="active-page"><a href="index.html">Home</a></li>
-                <li><a href="pages/about-me.html">About me</a></li>
-                <li><a href="pages/projects.html">Projects</a></li>
-                <li><a href="pages/contact.html">Contact</a></li>
-            </ul>
-        </nav>
+
+        <!-- My name and cv below it -->
+        <section>
+            <h1 class="name">LARS BEIJAARD</h1>
+            <h2 class="cv"><a href="files/CV.pdf" target="_blank">Click here to review my CV.</a></h2>
+        </section>
+
+        <!-- Navigation bar with the active page highlighted -->
+        <section>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="index.html" id="active-page">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="skills.html">SKILLS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <hr class="stripe-solid">
 
         <main>
-            <!-- Name and type of developer (software- and game developer) -->
-            <section class="page-intro">
-                <h4 class="name">Lars Beijaard</h4>
-                <h2 class="type-of-developer">Software- and Game Developer.</h2>
-                <button class="learn-more"><a href="pages/about-me.html">Learn more</a></button>
-            </section>
+
+            <!-- Credits to The Boring Company for the inspiration of the website design -->
+            <p class="credit">
+                Page design inspired by: <a href="https://www.boringcompany.com/" target="_blank">The Boring Company</a>.
+            </p>
+
         </main>
 
         <footer>
-            <p class="copyright">&copy; Lars Beijaard</p>
+
+            <!-- Small contact options, shown as icons -->
+            <section class="footer-contact">
+                <ul>
+                    <!-- GitHub profile -->
+                    <li><a href="https://github.com/larsbeijaard" target="_blank"><i class="fa fa-github"></i></a></li>
+                    <!-- LinkedIn profile -->
+                    <li><a href="https://www.linkedin.com/in/lars-beijaard-89084b150/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <!-- Email -->
+                    <li><a href="mailto: larsbeijaard@outlook.com"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+            </section>
+
         </footer>
+
     </body>
+
 </html>

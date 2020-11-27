@@ -1,47 +1,26 @@
-body {
-    font-family: 'Nanum Gothic', sans-serif;
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: white;
-    background-color: rgb(41, 41, 41);
 }
 
-#active-page {
-    border-bottom: 1px solid rgb(56, 201, 97);
+html {
+    scroll-behavior: smooth;
 }
 
-a {
-    transition: 0.3s;
-    text-decoration: none;
-    color: white;
+body {
+    width: 45%;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
 }
 
-a:hover {
-    cursor: pointer;
-    color: rgb(56, 201, 97);
+footer {
+    padding-top: 60px;
 }
 
-.nav-bar {
-    font-size: 35px;
-    text-transform: uppercase;
-    text-align: right;
-    width: 100%;
-}
-
-.nav-bar ul {
-    padding: 15px 45px;
-    list-style-type: none;
-}
-
-.nav-bar li {
-    display: inline-block;
-    padding: 0 30px;
-}
-
-.copyright {
-    font-size: 15px;
-    position: fixed;
-    bottom: 0;
-    left: 15px;
+@media only screen and (max-width: 1115px) {
+    body {
+        width: 95%;
+    }
 }
