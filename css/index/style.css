@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --left-margin-content: 210px;
+    --left-margin-content-800: 160px;
+    --left-margin-content-500: 110px;
+
+    --link-color: #368FF5;
+}
+
+#main-container {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: lighter;
+    position: absolute;
+    width: 800px;
+    top: 15%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+#aside-container {
+    position: absolute;
+    width: 200px;
+}
+
+#greeting {
+    text-align: center;
+    font-size: 38px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+#selfie {
+    width: 200px;
+    height: 200px;
+    float: left;
+    border-radius: 50%;
+}
+
+#socials {
+    list-style: none;
+    text-align: center;
+}
+
+#socials li {
+    height: 30px;
+    margin: 10px 7px;
+    display: inline-block;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.icon:hover {
+    transform: scale(1.125);
+}
+
+#description {
+    width: auto;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: var(--left-margin-content);
+    font-size: 22px;
+}
+
+.link {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.link:hover {
+    border-bottom: 1px solid var(--link-color);
+}
+
+#projects {
+    position: relative;
+    list-style: none;
+    margin-top: 20px;
+    margin-left: var(--left-margin-content);
+}
+
+#projects li {
+    display: block;
+    margin-top: 5px;
+}
+
+#projects li a {
+    text-decoration: none;
+    color: var(--link-color);
+    font-size: 20px;
+}
+
+@media (max-width: 800px) {
+    #main-container {
+        width: 96%;
+    }
+
+    #aside-container {
+        width: 150px;
+    }
+
+    #greeting {
+        font-size: 30px;
+    }
+
+    #selfie {
+        width: 150px;
+        height: 150px;
+    }
+
+    #socials {
+        margin-top: 170px;
+    }
+
+    #description, #projects {
+        margin-left: var(--left-margin-content-800);
+        height: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    #aside-container {
+        width: 100px;
+    }
+
+    #greeting {
+        font-size: 20px;
+    }
+
+    #selfie {
+        width: 100px;
+        height: 100px;
+    }
+
+    #socials {
+        margin-top: 120px;
+    }
+
+    #socials li {
+        display: block;
+    }
+
+    #description, #projects {
+        margin-left: var(--left-margin-content-500);
+    }
+}
