@@ -8,7 +8,6 @@
     --left-margin-content: 210px;
     --left-margin-content-800: 160px;
     --left-margin-content-500: 110px;
-
     --link-color: #368FF5;
 }
 
@@ -39,7 +38,8 @@
     width: 200px;
     height: 200px;
     float: left;
-    /* border-radius: 50%; Uncomment this if the website has been further developed. */
+    border-radius: 50%;
+    box-shadow: 5px 5px 8px #dfdcdc;
 }
 
 #socials {
