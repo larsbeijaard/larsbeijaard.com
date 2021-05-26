@@ -39,7 +39,7 @@
     width: 200px;
     height: 200px;
     float: left;
-    border-radius: 50%;
+    /* border-radius: 50%; Uncomment this if the website has been further developed. */
 }
 
 #socials {
