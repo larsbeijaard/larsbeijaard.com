@@ -7,8 +7,8 @@ const greetings = [
     'Ni hao',
     'Hola',
     'Konnichiwa',
-    'Buongiorno',
-    'Hallo'
+    'Hallo',
+    'Buongiorno'
 ];
 
 // Set the initial value to 1 since we pre-set the greeting text with index 0.
