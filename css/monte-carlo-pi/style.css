@@ -1,0 +1,56 @@
+#main-container {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: lighter;
+    position: absolute;
+    width: 800px;
+    height: auto;
+    top: 15%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+#canvas {
+    /* border: 1px solid black; */
+}
+
+#stats {
+    width: 275px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 525px;
+}
+
+#stats table tr th {
+    text-align: left;
+}
+
+#stats table tr {
+    line-height: 35px;
+}
+
+@media (max-width: 800px) {
+    #main-container {
+        width: 96%;
+    }
+
+    #canvas {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #stats {
+        margin: 0;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 525px) {
+    #canvas {
+        width: 100%;
+    }
+}
