@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --left-margin-content: 210px;
+    --left-margin-content-800: 160px;
+    --left-margin-content-500: 110px;
+    --link-color: #368FF5;
+}
