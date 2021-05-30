@@ -1,5 +1,5 @@
 const canvas = document.getElementById('canvas');
-const ctx = canvas.getContext('2d');
+const canvasContext = canvas.getContext('2d');
 
 // We are only asking for the canvas width, because the canvas is always a square.
 const totalSize = canvas.width;
@@ -11,47 +11,47 @@ const gridSize = 480;
 const offset = totalSize - gridSize;
 
 function drawGridBorders() {
-    ctx.beginPath();
-    ctx.strokeStyle = '#000000';
-    ctx.rect(offset, 0, gridSize, gridSize);
-    ctx.stroke();
+    canvasContext.beginPath();
+    canvasContext.strokeStyle = '#000000';
+    canvasContext.rect(offset, 0, gridSize, gridSize);
+    canvasContext.stroke();
 }
 
 function drawGridLines() {
-    const gridSquares = gridSize / 65;
+    const gridSquares = gridSize / 10;
     
-    ctx.beginPath();
-    ctx.strokeStyle = '#ebebeb';
+    canvasContext.beginPath();
+    canvasContext.strokeStyle = '#ebebeb';
 
     // Draw the grid lines.
     for (let i = 1; i < gridSize / gridSquares; i++) {
         // The (-/+)1 is there because then the grid borders are not overdrawn by the line.
 
         // Horizontal lines.
-        ctx.moveTo(offset + 1, gridSquares * i);
-        ctx.lineTo(canvas.width - 1, gridSquares * i);
+        canvasContext.moveTo(offset + 1, gridSquares * i);
+        canvasContext.lineTo(canvas.width - 1, gridSquares * i);
 
         // Vertical lines.
-        ctx.moveTo((gridSquares * i) + offset, 1);
-        ctx.lineTo((gridSquares * i) + offset, (canvas.height - offset) - 1);
+        canvasContext.moveTo((gridSquares * i) + offset, 1);
+        canvasContext.lineTo((gridSquares * i) + offset, (canvas.height - offset) - 1);
     }
 
-    ctx.stroke();
+    canvasContext.stroke();
 }
 
 function drawSideMarks() {
     const markCount = 10;
     const textSize = 7.0;
 
-    ctx.beginPath();
-    ctx.strokeStyle = '#000000';
+    canvasContext.beginPath();
+    canvasContext.strokeStyle = '#000000';
 
     // Mark zero (0.0).
-    ctx.fillText('0.0', 0, canvas.height - 1);
+    canvasContext.fillText('0.0', 0, canvas.height - 1);
 
     // Horizontal and vertical mark one (1.0).
-    ctx.fillText('1.0', 0, textSize + 1);
-    ctx.fillText('1.0', canvas.width - 15, canvas.height - 1);
+    canvasContext.fillText('1.0', 0, textSize + 1);
+    canvasContext.fillText('1.0', canvas.width - 15, canvas.height - 1);
 
     for (let i = 1; i < markCount; i++) {
         /*
@@ -67,23 +67,25 @@ function drawSideMarks() {
          */
 
         // Horizontal marks.
-        ctx.fillText(i / markCount, (offset - textSize) + (i * (gridSize / markCount)), canvas.height - 1);
+        canvasContext.fillText(i / markCount, (offset - textSize) + (i * (gridSize / markCount)), canvas.height - 1);
         
         // Vertical lines.
-        ctx.fillText(i / markCount, 1, ((canvas.height - offset) + (textSize / 2)) - (i * (gridSize / markCount)));
+        canvasContext.fillText(i / markCount, 1, ((canvas.height - offset) + (textSize / 2)) - (i * (gridSize / markCount)));
     }
 
-    ctx.stroke();
+    canvasContext.stroke();
 }
 
 function drawArc() {
-    ctx.beginPath();
-    ctx.strokeStyle = '#FF0000';
-    ctx.arc(offset, canvas.height - offset, gridSize, -0.5 * Math.PI, 0);
-    ctx.stroke();
+    canvasContext.beginPath();
+    canvasContext.strokeStyle = '#FF0000';
+    canvasContext.arc(offset, canvas.height - offset, gridSize, -0.5 * Math.PI, 0);
+    canvasContext.stroke();
 }
 
 drawGridBorders();
 drawGridLines();
 drawSideMarks();
 drawArc();
+
+export { canvasContext, gridSize, offset };
