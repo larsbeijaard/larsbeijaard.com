@@ -19,47 +19,27 @@
         <section id="main-container">
             <section id="grid-container">
                 <canvas id="canvas" width="500" height="500"></canvas>
-                <script src="../../js/monte-carlo-pi/layout.js"></script>
+                <script src="../../js/monte-carlo-pi/layout.js" type="module"></script>
             </section>
 
             <section id="statistics">
                 <table>
                     <tr>
                         <th>Generation</th>
-                        <td id="generation">425143</td>
+                        <td id="generation">0</td>
                     </tr>
                     <tr>
                         <th>Estimation</th>
-                        <td id="estimation">3.141592</td>
-                    </tr>
-                    <tr>
-                        <th>Generation speed</th>
-                        <td>slow/normal/fast</td>
-                    </tr>
-                    <tr>
-                        <th>Circle color</th>
-                        <td>red</td>
-                    </tr>
-                    <tr>
-                        <th>In circle color</th>
-                        <td>green</td>
-                    </tr>
-                    <tr>
-                        <th>Out circle color</th>
-                        <td>blue</td>
-                    </tr>
-                    <tr>
-                        <th>Show grid</th>
-                        <td>true</td>
-                    </tr>
-                    <tr>
-                        <th>Estimate</th>
-                        <td>button</td>
+                        <td id="estimation">0</td>
                     </tr>
                 </table>
+
+                <p>Customizable options will be added soon!</p>
+
+                <button type="button" id="estimate">Estimate</button>
             </section>
             
-            <script src="../../js/monte-carlo-pi/algorithm.js"></script>
+            <script src="../../js/monte-carlo-pi/algorithm.js" type="module"></script>
         </section>
     </body>
 </html>
