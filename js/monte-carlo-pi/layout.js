@@ -26,14 +26,15 @@ function drawGridLines() {
 
     // Draw the grid lines.
     for (let i = 1; i < gridWidth / lineSpacing; i++) {
+        // The (-/+)1 is there because then the grid borders are not overdrawn by the line.
+
         // Horizontal lines.
         ctx.moveTo(offset + 1, lineSpacing * i);
         ctx.lineTo(canvas.width - 1, lineSpacing * i);
 
         // Vertical lines.
-        ctx.moveTo(lineSpacing * i + offset, 1);
-        ctx.lineTo(lineSpacing * i + offset, canvas.height - offset - 1);
-
+        ctx.moveTo((lineSpacing * i) + offset, 1);
+        ctx.lineTo((lineSpacing * i) + offset, (canvas.height - offset) - 1);
     }
 
     ctx.stroke();
