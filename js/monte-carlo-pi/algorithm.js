@@ -1,3 +1,6 @@
+const generation = document.getElementById('generation');
+const estimation = document.getElementById('estimation');
+
 var totalPoints = 0;
 var totalPointsInCircle = 0;
 
@@ -16,6 +19,10 @@ function drawPointOnGrid() {
 
     const result = (Math.pow(point.x, 2) + Math.pow(point.y, 2));
     
+    if (result <= 1) {
+        totalPointsInCircle++;
+    }
+
     ctx.beginPath();
     if (result >= 0.99 && result <= 1.01) {
         ctx.fillStyle = '#FF0000';
@@ -28,6 +35,12 @@ function drawPointOnGrid() {
     totalPoints++;
 }
 
+function updateStats() {
+    generation.innerText = totalPoints;
+    estimation.innerText = (4 * totalPointsInCircle / totalPoints).toFixed(10);
+}
+
 setInterval(() => {
     drawPointOnGrid();
+    updateStats();
 }, 1);
