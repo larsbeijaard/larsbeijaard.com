@@ -19,7 +19,7 @@ function drawGridBorders() {
 
 function drawGridLines() {
     const offset = totalWidth - gridWidth;
-    const lineSpacing = gridWidth / 10;
+    const lineSpacing = 10;
     
     ctx.beginPath();
     ctx.strokeStyle = '#ebebeb';
@@ -72,7 +72,7 @@ function drawSideMarks() {
         ctx.fillText(i / markCount, (offset - textSize) + (i * (gridWidth / markCount)), canvas.height - 1);
         
         // Vertical lines.
-        ctx.fillText(i / markCount, 1, ((canvas.height - offset) + (textSize / 2)) - (i * (gridWidth / markCount)) );
+        ctx.fillText(i / markCount, 1, ((canvas.height - offset) + (textSize / 2)) - (i * (gridWidth / markCount)));
     }
 
     ctx.stroke();
