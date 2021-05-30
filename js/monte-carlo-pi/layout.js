@@ -1,11 +1,11 @@
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 
-// We are only asking for the canvas width because the canvas is always square.
+// We are only asking for the canvas width, because the canvas is always a square.
 const totalSize = canvas.width;
 
 // Decrease the grid size with a bit to keep space for the side/bottom marks (0.0, 0.1, etc).
-export const gridSize = 480;
+const gridSize = 480;
 
 // The offset from the canvas border to the grid border.
 const offset = totalSize - gridSize;
@@ -18,22 +18,22 @@ function drawGridBorders() {
 }
 
 function drawGridLines() {
-    const lineSpacing = 10;
+    const gridSquares = gridSize / 65;
     
     ctx.beginPath();
     ctx.strokeStyle = '#ebebeb';
 
     // Draw the grid lines.
-    for (let i = 1; i < gridSize / lineSpacing; i++) {
+    for (let i = 1; i < gridSize / gridSquares; i++) {
         // The (-/+)1 is there because then the grid borders are not overdrawn by the line.
 
         // Horizontal lines.
-        ctx.moveTo(offset + 1, lineSpacing * i);
-        ctx.lineTo(canvas.width - 1, lineSpacing * i);
+        ctx.moveTo(offset + 1, gridSquares * i);
+        ctx.lineTo(canvas.width - 1, gridSquares * i);
 
         // Vertical lines.
-        ctx.moveTo((lineSpacing * i) + offset, 1);
-        ctx.lineTo((lineSpacing * i) + offset, (canvas.height - offset) - 1);
+        ctx.moveTo((gridSquares * i) + offset, 1);
+        ctx.lineTo((gridSquares * i) + offset, (canvas.height - offset) - 1);
     }
 
     ctx.stroke();
