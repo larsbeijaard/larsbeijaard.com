@@ -15,28 +15,38 @@
     height: 500px;
 }
 
-#note {
-    font-weight: normal;
-    font-size: 14px;
-    color: #797373;
-    text-align: center;
-    margin: 25px 0;
-}
-
 #statistics {
     width: 275px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     margin-left: 525px;
-}
-
-#statistics table tr th {
-    text-align: left;
+    text-align: center;
 }
 
 #statistics table tr {
     line-height: 35px;
+}
+
+#statistics table tr th,
+#statistics table tr td {
+    text-align: left;
+    white-space: nowrap;
+}
+
+#statistics table tr td {
+    position: absolute;
+    margin-left: 15px;
+}
+
+#statistics table tr td input {
+    width: 100%;
+}
+
+#estimate {
+    margin-top: 15px;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 @media (max-width: 800px) {
