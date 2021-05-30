@@ -19,7 +19,7 @@ function drawGridBorders() {
 
 function drawGridLines() {
     const offset = totalWidth - gridWidth;
-    const lineSpacing = 10;
+    const lineSpacing = gridWidth / 10;
     
     ctx.beginPath();
     ctx.strokeStyle = '#ebebeb';
@@ -40,18 +40,41 @@ function drawGridLines() {
 }
 
 function drawSideMarks() {
-    // Mark zero.
-    ctx.fillText('0.0', 0, canvas.height);
+    const offset = totalWidth - gridWidth;
+    const markCount = 10;
+    const textSize = 7.0;
 
-    // Horizontal marks.
-    for (let i = 1; i < 10; i++) {
-        ctx.fillText(`${i / 10}`, 0, canvas.height - (i * 52));
+    ctx.beginPath();
+    ctx.strokeStyle = '#000000';
+
+    // Mark zero (0.0).
+    ctx.fillText('0.0', 0, canvas.height - 1);
+
+    // Horizontal and vertical mark one (1.0).
+    ctx.fillText('1.0', 0, textSize + 1);
+    ctx.fillText('1.0', canvas.width - 15, canvas.height - 1);
+
+    for (let i = 1; i < markCount; i++) {
+        /*
+         * Formula:
+         *  ((canvas.height - offset) + (textSize / 2)) and (offset - textSize):
+         *      Returns the start position for the text. The offset is there
+         *      to place the text besides the border instead of the actual canvas.height positition
+         *      (which would be located further down). And the (textSize / 2) places the mark a 
+         *      bit further down, so that the mark's center is also centered with a drawn line.
+         * 
+         *  (i * (gridWidth / markCount)) return the evenly spaced position. That is so because
+         *  then the marks are evenly spaced from each other.
+         */
+
+        // Horizontal marks.
+        ctx.fillText(i / markCount, (offset - textSize) + (i * (gridWidth / markCount)), canvas.height - 1);
+        
+        // Vertical lines.
+        ctx.fillText(i / markCount, 1, ((canvas.height - offset) + (textSize / 2)) - (i * (gridWidth / markCount)) );
     }
 
-    // Vertical marks.
-    for (let i = 1; i < 10; i++) {
-        ctx.fillText(`${i / 10}`, i * 50, canvas.height);
-    }
+    ctx.stroke();
 }
 
 function drawArc() {
