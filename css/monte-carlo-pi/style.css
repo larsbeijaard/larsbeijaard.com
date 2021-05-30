@@ -10,11 +10,20 @@
     margin: 0 auto;
 }
 
-#canvas {
-    /* border: 1px solid black; */
+#grid-container {
+    width: 500px;
+    height: 500px;
 }
 
-#stats {
+#note {
+    font-weight: normal;
+    font-size: 14px;
+    color: #797373;
+    text-align: center;
+    margin: 25px 0;
+}
+
+#statistics {
     width: 275px;
     position: absolute;
     top: 50%;
@@ -22,11 +31,11 @@
     margin-left: 525px;
 }
 
-#stats table tr th {
+#statistics table tr th {
     text-align: left;
 }
 
-#stats table tr {
+#statistics table tr {
     line-height: 35px;
 }
 
@@ -35,13 +44,21 @@
         width: 96%;
     }
 
+    #grid-container {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: auto;
+    }
+
     #canvas {
         position: relative;
         left: 50%;
         transform: translateX(-50%);
     }
 
-    #stats {
+    #statistics {
         margin: 0;
         position: relative;
         left: 50%;
