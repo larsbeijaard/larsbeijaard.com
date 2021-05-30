@@ -1,8 +1,32 @@
-const generation = document.getElementById('generation');
-const estimation = document.getElementById('estimation');
+import { drawPoint, updateStatistics } from './visualizer.js';
 
-var totalPoints = 0;
-var totalPointsInCircle = 0;
+const estimateButton = document.getElementById('estimate');
+estimateButton.addEventListener('click', start);
+
+var _generation = 0;
+var _estimation = 0;
+
+var _totalPoints = 0;
+var _totalPointsInCircle = 0;
+
+var _started = false;
+
+function start() {
+    if (!_started) {
+        _started = true;
+
+        setInterval(() => {
+            _generation++;
+    
+            // Generate a random point an validate the point.
+            const randomPoint = getRandomPoint();
+            validatePoint(randomPoint.x, randomPoint.y);
+    
+            // Estimate the value of PI.
+            estimate();
+        }, 1);
+    }
+}
 
 function getRandomPoint() {
     const x = Math.random();
@@ -11,36 +35,34 @@ function getRandomPoint() {
     return { x, y };
 }
 
-function drawPointOnGrid() {
-    const canvas = document.getElementById('canvas');
-    const ctx = canvas.getContext('2d');
-
-    const point = getRandomPoint();
-
-    const result = (Math.pow(point.x, 2) + Math.pow(point.y, 2));
+function validatePoint(x, y) {
+    // Check if the point (x, y) is within the circle radius.
+    const sum = Math.pow(x, 2) + Math.pow(y, 2);
+    const inCircle = sum <= 1;
     
-    if (result <= 1) {
-        totalPointsInCircle++;
+    const lineOffset = 0.01;
+
+    let pointColor = '#7AD1FF';
+
+    if (inCircle) {
+        _totalPointsInCircle++;
+        pointColor = '#00FFA2';
     }
 
-    ctx.beginPath();
-    if (result >= 0.99 && result <= 1.01) {
-        ctx.fillStyle = '#FF0000';
-    } else {
-        ctx.fillStyle = (Math.pow(point.x, 2) + Math.pow(point.y, 2)) <= 1 ? '#00FFA2' : '#7AD1FF';
+    // If the sum is very near the circle line, color the point red.
+    if (sum >= (1 - lineOffset) && sum <= (1 + lineOffset)) {
+        pointColor = '#FF0000';
     }
-    ctx.arc(20 + (point.x * 480), Math.abs((point.y * 480) - 480), 2, 0, 2 * Math.PI);
-    ctx.fill();
 
-    totalPoints++;
+    _totalPoints++;
+
+    drawPoint(x, y, pointColor);
 }
 
-function updateStats() {
-    generation.innerText = totalPoints;
-    estimation.innerText = (4 * totalPointsInCircle / totalPoints).toFixed(10);
-}
+function estimate() {
+    const PI = (4 * _totalPointsInCircle) / _totalPoints;
+    const PIDecimals = 12;
+    _estimation = PI.toFixed(PIDecimals);
 
-setInterval(() => {
-    drawPointOnGrid();
-    updateStats();
-}, 1);
+    updateStatistics(_generation, _estimation);
+}
