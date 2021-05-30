@@ -1,14 +1,14 @@
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 
-const totalWidth = canvas.width;
-const totalHeight = canvas.height;
+// We are only asking for the canvas width because the canvas is always square.
+const totalSize = canvas.width;
 
 // Decrease the grid size with a bit to keep space for the side/bottom marks (0.0, 0.1, etc).
-const gridSize = 480;
+export const gridSize = 480;
 
 // The offset from the canvas border to the grid border.
-const offset = totalWidth - gridSize;
+const offset = totalSize - gridSize;
 
 function drawGridBorders() {
     ctx.beginPath();
