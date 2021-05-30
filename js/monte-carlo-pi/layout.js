@@ -4,17 +4,16 @@ const ctx = canvas.getContext('2d');
 const totalWidth = canvas.width;
 const totalHeight = canvas.height;
 
-// Decrease the grid with a bit to keep space for the side/bottom marks (0.0, 0.1, etc).
-const gridWidth = 480;
-const gridHeight = 480;
+// Decrease the grid size with a bit to keep space for the side/bottom marks (0.0, 0.1, etc).
+const gridSize = 480;
 
 // The offset from the canvas border to the grid border.
-const offset = totalWidth - gridWidth;
+const offset = totalWidth - gridSize;
 
 function drawGridBorders() {
     ctx.beginPath();
     ctx.strokeStyle = '#000000';
-    ctx.rect(offset, 0, gridWidth, gridHeight);
+    ctx.rect(offset, 0, gridSize, gridSize);
     ctx.stroke();
 }
 
@@ -25,7 +24,7 @@ function drawGridLines() {
     ctx.strokeStyle = '#ebebeb';
 
     // Draw the grid lines.
-    for (let i = 1; i < gridWidth / lineSpacing; i++) {
+    for (let i = 1; i < gridSize / lineSpacing; i++) {
         // The (-/+)1 is there because then the grid borders are not overdrawn by the line.
 
         // Horizontal lines.
@@ -68,10 +67,10 @@ function drawSideMarks() {
          */
 
         // Horizontal marks.
-        ctx.fillText(i / markCount, (offset - textSize) + (i * (gridWidth / markCount)), canvas.height - 1);
+        ctx.fillText(i / markCount, (offset - textSize) + (i * (gridSize / markCount)), canvas.height - 1);
         
         // Vertical lines.
-        ctx.fillText(i / markCount, 1, ((canvas.height - offset) + (textSize / 2)) - (i * (gridWidth / markCount)));
+        ctx.fillText(i / markCount, 1, ((canvas.height - offset) + (textSize / 2)) - (i * (gridSize / markCount)));
     }
 
     ctx.stroke();
@@ -80,7 +79,7 @@ function drawSideMarks() {
 function drawArc() {
     ctx.beginPath();
     ctx.strokeStyle = '#FF0000';
-    ctx.arc(offset, canvas.height - offset, gridWidth, -0.5 * Math.PI, 0);
+    ctx.arc(offset, canvas.height - offset, gridSize, -0.5 * Math.PI, 0);
     ctx.stroke();
 }
 
