@@ -17,10 +17,14 @@
 
     <body>
         <section id="main-container">
-            <canvas id="canvas" width="500" height="500"></canvas>
-            <script src="../../js/monte-carlo-pi/designCanvasGrid.js"></script>
+            <section id="grid-container">
+                <canvas id="canvas" width="500" height="500"></canvas>
+                <script src="../../js/monte-carlo-pi/layout.js"></script>
 
-            <section id="stats">
+                <h3 id="note">Note: the algorithm resets when the grid aspect ratio changes!</h3>
+            </section>
+
+            <section id="statistics">
                 <table>
                     <tr>
                         <th>Generation</th>
@@ -36,7 +40,7 @@
                     </tr>
                     <tr>
                         <th>Circle color</th>
-                        <td>grey</td>
+                        <td>red</td>
                     </tr>
                     <tr>
                         <th>In circle color</th>
@@ -44,7 +48,11 @@
                     </tr>
                     <tr>
                         <th>Out circle color</th>
-                        <td>red</td>
+                        <td>blue</td>
+                    </tr>
+                    <tr>
+                        <th>Show grid</th>
+                        <td>true</td>
                     </tr>
                     <tr>
                         <th>Estimate</th>
