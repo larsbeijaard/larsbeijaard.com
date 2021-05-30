@@ -8,9 +8,10 @@ const totalHeight = canvas.height;
 const gridWidth = 480;
 const gridHeight = 480;
 
-function drawGridBorders() {
-    const offset = totalWidth - gridWidth;
+// The offset from the canvas border to the grid border.
+const offset = totalWidth - gridWidth;
 
+function drawGridBorders() {
     ctx.beginPath();
     ctx.strokeStyle = '#000000';
     ctx.rect(offset, 0, gridWidth, gridHeight);
@@ -18,7 +19,6 @@ function drawGridBorders() {
 }
 
 function drawGridLines() {
-    const offset = totalWidth - gridWidth;
     const lineSpacing = 10;
     
     ctx.beginPath();
@@ -41,7 +41,6 @@ function drawGridLines() {
 }
 
 function drawSideMarks() {
-    const offset = totalWidth - gridWidth;
     const markCount = 10;
     const textSize = 7.0;
 
@@ -79,8 +78,6 @@ function drawSideMarks() {
 }
 
 function drawArc() {
-    const offset = 500 - gridWidth;
-
     ctx.beginPath();
     ctx.strokeStyle = '#FF0000';
     ctx.arc(offset, canvas.height - offset, gridWidth, -0.5 * Math.PI, 0);
