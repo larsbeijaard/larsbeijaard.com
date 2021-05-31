@@ -55,8 +55,13 @@
     width: 500px;
 }
 
-#monte-carlo {
-    font-weight: bolder;
+#note a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+#note a:hover {
+    border-bottom: 1px solid var(--link-color);
 }
 
 @media (max-width: 800px) {
