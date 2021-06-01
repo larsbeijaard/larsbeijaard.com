@@ -13,7 +13,12 @@ if (isset($_POST['f-submit'])) {
     $subjectCopy = "Copy: " . $_POST['f-subject'];
 
     $message = $_POST['f-message'];
-    $messageCopy = "You wrote: \n\n" . $_POST['f-subject'] . "\n\nI will reply as soon as I can!\n\nLars";
+    $messageCopy = "Hello " . $first_name . ",\n\n" .
+                   "Thank you for reaching out I will do my best to reply to your email as soon as possible.\n" .
+                   "Down below, you will find a copy of your email:\n\n" . 
+                   $message .
+                   "\n\nKind regards," .
+                   "\n\nLars Beijaard";
 
     $headers = "From: " . $email_from;
     $headersCopy = "From: " . $no_reply_email;
