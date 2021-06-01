@@ -7,44 +7,39 @@
         <meta name="description" content="Hello, this is my portfolio website where you can find my creations!">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="icon" href="files/icons/favicon.ico">
-
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/index/style.css">
+        <link rel="stylesheet" href="index/style.css">
+        <link rel="stylesheet" href="shared-css/style.css">
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
     </head>
 
     <body>
+        <nav>
+            <a href="index.html">
+                <img id="nav-icon" src="files/images/selfie.png">
+            </a>
+
+            <ul id="nav">
+                <li>
+                    <a href="index.html">About</a>
+                </li>
+                |
+                <li>
+                    <a href="projects/projects.html">Projects</a>
+                </li>
+                |
+                <li>
+                    <a href="contact/contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
         <section id="main-container">
-            <aside id="aside-container">
-                <h1 id="greeting">Greetings!</h1>
-                <script src="js/greeting.js"></script>
-
-                <img id="selfie" alt="selfie" src="files/images/selfie-placeholder.png">
-                <ul id="socials">
-                    <li>
-                        <a href="https://www.linkedin.com/in/larsbeijaard/" target="_blank">
-                            <img class="icon" src="files/icons/linkedin-icon.svg">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/larsbeijaard" target="_blank">
-                            <img class="icon" src="files/icons/github-icon.svg">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/larsbeijaard" target="_blank">
-                            <img class="icon" src="files/icons/twitter-icon.svg">
-                        </a>
-                    </li>
-                </ul>
-            </aside>
-
-            <p id="description">
-                I'm a <span id="age"></span>-year-old, Dutch programming enthusiast.
-                <script src="js/age.js"></script>
+            <img id="selfie" src="files/images/selfie-placeholder.png">
+            <p id="about">
+                Hi, I'm a <span id="age"></span>-year-old, Dutch programming enthusiast.
+                <script src="index/js/age.js"></script>
                 <br><br>
 
                 I'm studying Game Development at <a class="link" href="https://www.glu.nl/opleiding/game-developer/" target="_blank">GLU</a>. 
@@ -52,18 +47,11 @@
                 I'm going to study Computer Science.
                 <br><br>
 
-                Beneath here, you can find some of my projects.
+                Currently, in my spare time, I'm highly focused on creating and visualizing algorithms. See
+                <a href="projects/projects.html">projects</a>.
+                <br><br>
 
-                <nav>
-                    <ul id="projects">
-                        <li>
-                            <a href="algorithms/monte-carlo-pi/index.html">Monte Carlo PI</a>
-                        </li>
-                        <li>
-                            <a href="#">Website and projects are under development.</a>
-                        </li>
-                    </ul>
-                </nav>
+                This website and projects that are on it, are still in development.
             </p>
         </section>
     </body>
