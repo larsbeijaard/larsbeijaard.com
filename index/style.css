@@ -1,5 +1,60 @@
 #main-container {
-    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    width: var(--main-container-width);
+    height: 500px;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#main-container #selfie {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#main-container #selfie,
+#main-container #about {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#main-container #about {
+    margin-left: 160px;
+    font-size: 18px;
+}
+
+@media (max-width: 800px) {
+    #main-container {
+        width: 98%;
+    }
+}
+
+@media (max-width: 500px) {
+    #main-container #selfie {
+        width: 100px;
+        height: 100px;
+    }
+
+    #main-container #about {
+        margin-left: 110px;
+    }
+}
+
+@media (max-width: 415px) {
+    #main-container #selfie {
+        width: 75px;
+        height: 75px;
+    }
+
+    #main-container #about {
+        margin-left: 85px;
+    }
+}
+
+/* #main-container {
+    font-family: 'Open Sans', sans-serif;
     font-weight: lighter;
     position: absolute;
     width: 800px;
@@ -137,4 +192,4 @@
     #description, #projects {
         margin-left: var(--left-margin-content-500);
     }
-}
+} */
