@@ -1,0 +1,73 @@
+#main-container {
+    position: absolute;
+    width: 450px;
+    height: 500px;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+form {
+    margin-bottom: 50px;
+}
+
+#contact input,
+#f-message {
+    width: 100%;
+    font-size: 16px;
+    padding: 0 5px;
+    padding: 10px 5px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    border: 1px solid #4b4b4b;
+    transition: 0.2s;
+}
+
+#contact input:hover,
+#contact input:focus,
+#f-message:hover,
+#f-message:focus {
+    box-shadow: -3px 3px #368FF5;
+    margin-left: 6px;
+}
+
+#firstname,
+#lastname {
+    width: 47%;
+}
+
+#firstname {
+    float: left;
+}
+
+#lastname {
+    float: right;
+}
+
+#f-message {
+    font-family: 'Open Sans', sans-serif;
+    resize: vertical;
+    min-height: 200px;
+    padding: 5px;
+}
+
+#f-submit {
+    padding: 5px 20%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3px;
+    transition: 0.2s;
+}
+
+#f-submit:hover {
+    box-shadow: -3px 3px #368FF5;
+    margin-left: 3px;
+    margin-top: -3px;
+}
+
+@media (max-width: 450px) {
+    #main-container {
+        width: 98%;
+    }
+}
