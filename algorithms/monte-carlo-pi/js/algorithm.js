@@ -1,4 +1,4 @@
-import { drawPoint, updateStatistics } from './visualizer.js';
+import { drawPoint, updateStatistics, drawEstimation } from './visualizer.js';
 
 const estimateButton = document.getElementById('estimate');
 estimateButton.addEventListener('click', start);
@@ -24,7 +24,7 @@ function start() {
     
             // Estimate the value of PI.
             estimate();
-        }, 1);
+        }, 50);
     }
 }
 
@@ -63,6 +63,8 @@ function estimate() {
     const PI = (4 * _totalPointsInCircle) / _totalPoints;
     const PIDecimals = 12;
     _estimation = PI.toFixed(PIDecimals);
+
+    drawEstimation(_estimation);
 
     updateStatistics(_generation, _estimation);
 }

@@ -3,7 +3,7 @@
     font-weight: lighter;
     position: absolute;
     width: 800px;
-    height: auto;
+    /* height: auto; */
     top: 15%;
     left: 0;
     right: 0;
@@ -13,6 +13,11 @@
 #grid-container {
     width: 500px;
     height: 500px;
+}
+
+#svg {
+    top: 5%;
+    position: relative;
 }
 
 #statistics {
