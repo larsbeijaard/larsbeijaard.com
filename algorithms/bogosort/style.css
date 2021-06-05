@@ -1,0 +1,17 @@
+#svg-container {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    position: absolute;
+    width: 800px;
+    height: auto;
+    top: 15%; 
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+    #svg-container {
+        width: 96%;
+    }
+}
