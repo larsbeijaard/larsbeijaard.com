@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lars Beijaard</title>
+
+        <meta name="description" content="Bogosort also known as slowsort (and other names), is an highly inefficient 
+                                          algorithm that sorts an array by randomizing the order each iteration until 
+                                          the array is sorted.">
+        <meta name="author" content="Lars Beijaard">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" href="../../files/icons/favicon.ico">
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../../shared-css/style.css">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap">
+    </head>
+
+    <body>
+        <nav>
+            <a href="../../index.html">
+                <img id="nav-icon" src="../../files/images/selfie.png">
+            </a>
+
+            <ul id="nav">
+                <li>
+                    <a href="../../index.html">About</a>
+                </li>
+                |
+                <li>
+                    <a href="../../projects/projects.html">Projects</a>
+                </li>
+                |
+                <li>
+                    <a href="../../contact/contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section id="svg-container">
+            <div id="width"></div>
+            <svg id="svg" width="100%" height="400"></svg>
+            <script src="js/layout.js" type="module"></script>
+            <script src="js/generate-sticks.js" type="module"></script>
+            <script src="js/algorithm.js" type="module"></script>
+            
+            <button id="randomize" type="button">Randomize</button>
+            <button id="sort" type="button">Sort</button>
+        </section>
+    </body>
+</html>
