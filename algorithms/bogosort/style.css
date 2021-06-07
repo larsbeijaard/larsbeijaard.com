@@ -4,10 +4,9 @@
     position: absolute;
     width: 800px;
     height: auto;
-    top: 15%; 
-    left: 0;
-    right: 0;
-    margin: 0 auto;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 @media (max-width: 800px) {
