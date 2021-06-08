@@ -1,3 +1,5 @@
+import { typeError } from './error.js';
+
 const _svg = document.getElementById('svg');
 const _ns = 'http://www.w3.org/2000/svg';
 
@@ -24,7 +26,7 @@ function createGrid(height, color) {
         grid.setAttribute('width', gridWidth);
         grid.setAttribute('height', height);
     } else {
-        console.error('Make sure the height parameter is a typeof string or typeof number.');
+        typeError('height', ['string', 'number']);
     }
 
     // Set the fill and stroke attribute.
@@ -32,7 +34,7 @@ function createGrid(height, color) {
         grid.setAttribute('fill', 'none');
         grid.setAttribute('stroke', color);
     } else {
-        console.error('Make sure the height parameter is a typeof string.');
+        typeError('color', 'string');
     }
 
     // Add the mark the the svg.
@@ -48,14 +50,30 @@ function createGrid(height, color) {
  * @param {string} gridHeight The height of the grid.
  */
 function setSideMarks(from, to, amount, gridHeight) {
-    // The mark's y position.
-    let yPosition = gridHeight;
-    let markSpacing = gridHeight / (amount - 1);
+    let yPosition = 0;
+    let markSpacing = 0;
 
-    // The difference between each value. This is used after each
-    // generation to increase the markValue.
-    let markValueDifference = to / (amount - 1);
-    let markValue = from;
+    let markValueDifference = 0;
+    let markValue = 0;
+
+    if (typeof gridHeight === 'string' || typeof gridHeight === 'number') {
+        // The mark's y position.
+        yPosition = gridHeight;
+        markSpacing = gridHeight / (amount - 1);
+    } else {
+        typeError(typeof gridHeight, 'gridHeight', ['string', 'number']);
+    }
+
+    if (typeof from === 'number' && typeof to === 'number' && typeof amount === 'number') {
+        // The difference between each value. This is used after each
+        // generation to increase the markValue.
+        markValueDifference = (to - from) / (amount - 1);
+        markValue = from;
+    } else {
+        typeError(typeof from, 'from', 'number');
+        typeError(typeof to, 'to', 'number');
+        typeError(typeof amount, 'amount', 'number');
+    }
 
     // Create a group element to group all of the marks.
     let marksGroup = document.createElementNS(_ns, 'g');
@@ -77,7 +95,7 @@ function setSideMarks(from, to, amount, gridHeight) {
         mark.setAttribute('y', yPosition + yOffset);
 
         // Set the mark text.
-        mark.innerHTML = Math.floor(markValue);
+        mark.innerHTML = Math.round(markValue);
         markValue += markValueDifference;
 
         // Draw the mark's stroke.
@@ -113,8 +131,6 @@ function drawMarkStokes(height, group) {
     if (typeof height === 'string' || typeof height === 'number') {
         stroke.setAttribute('y1', height);
         stroke.setAttribute('y2', height);
-    } else {
-        console.error('Make sure the height parameter is a typeof string or typeof number.');
     }
 
     // Set the stroke attribute.
