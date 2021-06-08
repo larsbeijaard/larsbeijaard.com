@@ -58,15 +58,15 @@ function setSideMarks(from, to, amount, gridHeight) {
     let markValue = from;
 
     // Create a group element to group all of the marks.
-    let parentGroup = document.createElementNS(_ns, 'g');
-    parentGroup.setAttribute('id', 'marks');
-    _svg.appendChild(parentGroup);
+    let marksGroup = document.createElementNS(_ns, 'g');
+    marksGroup.setAttribute('id', 'marks');
+    _svg.appendChild(marksGroup);
 
     for (let i = 0; i < amount; i++) {
         // Create a group element for each new mark created.
         let group = document.createElementNS(_ns, 'g');
         group.setAttribute('id', `mark#${markValue}`);
-        parentGroup.appendChild(group);
+        marksGroup.appendChild(group);
 
         let mark = document.createElementNS(_ns, 'text');
         mark.setAttribute('x', 0);
