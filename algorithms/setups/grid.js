@@ -115,6 +115,7 @@ function setSideMarks(from, to, amount, gridHeight) {
  * the value of the mark is along the y axis.
  * 
  * @param {string} height The height of the grid.
+ * @param {object} group The svg group.
  */
 function drawMarkStokes(height, group) {
     const strokeXStart = '4%';
@@ -131,13 +132,19 @@ function drawMarkStokes(height, group) {
     if (typeof height === 'string' || typeof height === 'number') {
         stroke.setAttribute('y1', height);
         stroke.setAttribute('y2', height);
+    } else {
+        typeError(typeof height, 'height', ['string', 'number']);
     }
 
     // Set the stroke attribute.
     stroke.setAttribute('stroke', strokeColor);
 
-    // Add the mark the the svg.
-    group.appendChild(stroke);
+    if (typeof group === 'object') {
+        // Add the mark the the svg.
+        group.appendChild(stroke);
+    } else {
+        typeError(typeof group, 'group', 'object');
+    }
 }
 
 export { createGrid, setSideMarks };
