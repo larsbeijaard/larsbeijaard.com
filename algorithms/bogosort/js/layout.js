@@ -1,4 +1,11 @@
 import { createGrid, setSideMarks } from '../../setups/grid.js'; 
 
-createGrid(375, '#000000');
-setSideMarks(0, 100, 11, 375);
+const gridHeight = 375;
+const gridColor = '#000000';
+
+const markFrom = 0;
+const markTo = 100;
+const markCount = 3;
+
+createGrid(gridHeight, gridColor);
+setSideMarks(markFrom, markTo, markCount, gridHeight);
