@@ -56,15 +56,16 @@ function setSideMarks(from, to, amount, gridHeight) {
     let markValueDifference = 0;
     let markValue = 0;
 
-    if (typeof gridHeight === 'string' || typeof gridHeight === 'number') {
+    if ((typeof gridHeight === 'string' || typeof gridHeight === 'number') && typeof amount === 'number') {
         // The mark's y position.
         yPosition = gridHeight;
         markSpacing = gridHeight / (amount - 1);
     } else {
         typeError(typeof gridHeight, 'gridHeight', ['string', 'number']);
+        typeError(typeof amount, 'amount', 'number');
     }
 
-    if (typeof from === 'number' && typeof to === 'number' && typeof amount === 'number') {
+    if (typeof from === 'number' && typeof to === 'number') {
         // The difference between each value. This is used after each
         // generation to increase the markValue.
         markValueDifference = (to - from) / (amount - 1);
@@ -72,7 +73,6 @@ function setSideMarks(from, to, amount, gridHeight) {
     } else {
         typeError(typeof from, 'from', 'number');
         typeError(typeof to, 'to', 'number');
-        typeError(typeof amount, 'amount', 'number');
     }
 
     // Create a group element to group all of the marks.
