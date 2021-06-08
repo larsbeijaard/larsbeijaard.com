@@ -80,6 +80,7 @@ function setSideMarks(from, to, amount, gridHeight) {
     marksGroup.setAttribute('id', 'marks');
     _svg.appendChild(marksGroup);
 
+    // Generate a n amount of marks.
     for (let i = 0; i < amount; i++) {
         // Create a group element for each new mark created.
         let group = document.createElementNS(_ns, 'g');
