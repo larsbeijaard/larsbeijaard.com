@@ -1,11 +1,19 @@
 import { createGrid, setSideMarks } from '../../setups/grid.js'; 
+import { generateSticks } from '../../setups/sticks.js';
 
-const gridHeight = 375;
-const gridColor = '#000000';
+const _gridHeight = 375;
+const _gridColor = '#000000';
 
-const markFrom = 0;
-const markTo = 100;
-const markCount = 3;
+const _markFrom = 0;
+const _markTo = 100;
+const _markCount = 3;
 
-createGrid(gridHeight, gridColor);
-setSideMarks(markFrom, markTo, markCount, gridHeight);
+const _stickCount = 10;
+const _stickLow = 10;
+const _stickHigh = 100;
+const _stickColor = '#368FF5';
+
+createGrid(_gridHeight, _gridColor);
+setSideMarks(_markFrom, _markTo, _markCount, _gridHeight);
+
+generateSticks(_stickLow, _stickHigh, _stickCount, _stickColor);
