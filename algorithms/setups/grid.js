@@ -1,3 +1,5 @@
+import { typeError } from './error.js';
+
 const _svg = document.getElementById('svg');
 const _ns = 'http://www.w3.org/2000/svg';
 
@@ -15,55 +17,135 @@ function createGrid(height, color) {
     
     let grid = document.createElementNS(_ns, 'rect');
 
+    // Set the x and y attribute.
     grid.setAttribute('x', sideMarkSpace);
     grid.setAttribute('y', 0);
 
+    // Set the width and height attribute.
     if (typeof height === 'string' || typeof height === 'number') {
         grid.setAttribute('width', gridWidth);
         grid.setAttribute('height', height);
+    } else {
+        typeError('height', ['string', 'number']);
     }
 
+    // Set the fill and stroke attribute.
     if (typeof color === 'string') {
         grid.setAttribute('fill', 'none');
         grid.setAttribute('stroke', color);
+    } else {
+        typeError('color', 'string');
     }
 
+    // Add the mark the the svg.
     _svg.appendChild(grid);
 }
 
-function setMarks(from, to, amount, gridHeight) {
-    let yPosition = gridHeight;
-    let markSpacing = gridHeight / amount;
-    let markText = to / amount;
+/**
+ * Set the marks on the side of the grid.
+ * 
+ * @param {number} from The lowest mark value.
+ * @param {number} to The highest mark value.
+ * @param {number} amount The amount of marks there will be.
+ * @param {string} gridHeight The height of the grid.
+ */
+function setSideMarks(from, to, amount, gridHeight) {
+    let yPosition = 0;
+    let markSpacing = 0;
 
-    for (let i = 0; i < amount + 1; i++) {
+    let markValueDifference = 0;
+    let markValue = 0;
+
+    if ((typeof gridHeight === 'string' || typeof gridHeight === 'number') && typeof amount === 'number') {
+        // The mark's y position.
+        yPosition = gridHeight;
+        markSpacing = gridHeight / (amount - 1);
+    } else {
+        typeError(typeof gridHeight, 'gridHeight', ['string', 'number']);
+        typeError(typeof amount, 'amount', 'number');
+    }
+
+    if (typeof from === 'number' && typeof to === 'number') {
+        // The difference between each value. This is used after each
+        // generation to increase the markValue.
+        markValueDifference = (to - from) / (amount - 1);
+        markValue = from;
+    } else {
+        typeError(typeof from, 'from', 'number');
+        typeError(typeof to, 'to', 'number');
+    }
+
+    // Create a group element to group all of the marks.
+    let marksGroup = document.createElementNS(_ns, 'g');
+    marksGroup.setAttribute('id', 'marks');
+    _svg.appendChild(marksGroup);
+
+    // Generate a n amount of marks.
+    for (let i = 0; i < amount; i++) {
+        // Create a group element for each new mark created.
+        let group = document.createElementNS(_ns, 'g');
+        group.setAttribute('id', `mark#${markValue}`);
+        marksGroup.appendChild(group);
+
         let mark = document.createElementNS(_ns, 'text');
         mark.setAttribute('x', 0);
 
-        let yOffset = i < amount ? 6 : 12;
+        // Apply a y offset by 12 with the last mark, since else it won't
+        // be visible due to the grid border.
+        let yOffset = i < amount - 1 ? 6 : 12;
         mark.setAttribute('y', yPosition + yOffset);
 
-        mark.innerHTML = Math.floor(from);
-        drawMarkStokes(yPosition);
-        from += markText;
+        // Set the mark text.
+        mark.innerHTML = Math.round(markValue);
+        markValue += markValueDifference;
 
-        _svg.appendChild(mark);
+        // Draw the mark's stroke.
+        drawMarkStokes(yPosition, group);
 
+        // Decrease the y position, since we started at the highest
+        // y position.
         yPosition -= markSpacing;
+
+        // Add the mark to the group.
+        group.appendChild(mark);
     }
 }
 
-function drawMarkStokes(height) {
+/**
+ * Draw the strokes next to the marks to give a better indication of where
+ * the value of the mark is along the y axis.
+ * 
+ * @param {string} height The height of the grid.
+ * @param {object} group The svg group.
+ */
+function drawMarkStokes(height, group) {
+    const strokeXStart = '4%';
+    const strokeXEnd = '5%';
+    const strokeColor = '#000000';
+
     let stroke = document.createElementNS(_ns, 'line');
-    stroke.setAttribute('x1', '4%');
-    stroke.setAttribute('y1', height);
+
+    // Set the x1 and x2 attribute.
+    stroke.setAttribute('x1', strokeXStart);
+    stroke.setAttribute('x2', strokeXEnd);
     
-    stroke.setAttribute('x2', '5%');
-    stroke.setAttribute('y2', height);
+    // Set the y1 and y2 attribute.
+    if (typeof height === 'string' || typeof height === 'number') {
+        stroke.setAttribute('y1', height);
+        stroke.setAttribute('y2', height);
+    } else {
+        typeError(typeof height, 'height', ['string', 'number']);
+    }
 
-    stroke.setAttribute('stroke', '#000000');
+    // Set the stroke attribute.
+    stroke.setAttribute('stroke', strokeColor);
 
-    _svg.appendChild(stroke);
+    if (typeof group === 'object') {
+        // Add the mark the the svg.
+        group.appendChild(stroke);
+    } else {
+        typeError(typeof group, 'group', 'object');
+    }
 }
 
-export { createGrid, setMarks };
+export { createGrid, setSideMarks };
