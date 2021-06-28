@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+        <meta name="author" content="Lars Beijaard">
+        <meta name="description" content="My portfolio website.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet"> 
+
+        <title>Lars Beijaard</title>
+    </head>
+
+    <body id="body">
+        <section id="navbar">
+            <img id="selfie" src="files/selfie.png">
+        </section>
+
+        <section id="projects-container">
+            <ul>
+                <li class="project">
+                    <section id="bogosort">
+                        <div class="chart">
+                            <svg class="svg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"></svg>
+                        </div>
+                        <div class="controls">
+                            <h3 class="name">Bogosort</h3>
+                            <button type="button">Sort</button>
+                            <button class="randomize 0" type="button">Randomize</button>
+                            <button class="speed 0" type="button">x1.0</button>
+                        </div>
+                    </section>
+                </li>
+                
+                <li class="project">
+                    <section id="mergesort">
+                        <div class="chart">
+                            <svg class="svg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"></svg>
+                        </div>
+                        <div class="controls">
+                            <h3 class="name">Mergesort</h3>
+                            <button type="button">Sort</button>
+                            <button class="randomize 1" type="button">Randomize</button>
+                            <button class="speed 1" type="button">x1.0</button>
+                        </div>
+                    </section>
+                </li>
+                
+                <li class="project">
+                    <section id="quicksort">
+                        <div class="chart">
+                            <svg class="svg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"></svg>
+                        </div>
+                        <div class="controls">
+                            <h3 class="name">Quicksort</h3>
+                            <button type="button">Sort</button>
+                            <button class="randomize 2" type="button">Randomize</button>
+                            <button class="speed 2" type="button">x1.0</button>
+                        </div>
+                    </section>
+                </li>
+            </ul>
+        </section>
+
+        <script src="js/sorting/stickSetup.js"></script>
+        <script src="js/sorting/controlSpeed.js"></script>
+	</body>
+</html>
