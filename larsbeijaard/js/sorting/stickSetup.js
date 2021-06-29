@@ -33,17 +33,18 @@ function drawSticks(svgIndex) {
 
     // Create a group element that contain all of the sticks.
     const allSticksGroup = document.createElementNS(_ns, 'g');
-    allSticksGroup.setAttribute('id', `stickGroup#${svgIndex}`);
+    allSticksGroup.setAttribute('id', `stick-group#${svgIndex}`);
     _svg[svgIndex].appendChild(allSticksGroup);
     
     for (let i = 0; i < stickCount; i++) {
         // Create a group element to group the stick-related elements together.
         const stickGroup = document.createElementNS(_ns, 'g');
-        stickGroup.setAttribute('class', `stick#${i}`);
-
+        
         // Generate a random height for the stick.
         var height = Math.floor(Math.random() * (maxValue - minValue) + minValue);
         
+        stickGroup.setAttribute('class', `stick#${i} ${height}`);
+
         // Create a new rect element and set its attributes.
         const stick = document.createElementNS(_ns, 'rect');
         stick.setAttribute('height', height * heightMultiplication);
@@ -67,7 +68,7 @@ function drawSticks(svgIndex) {
 
 function drawStickText(stickGroup, stickXPostion, stickHeight) {
     const xOffset = 15;
-    const yPosition = 260;
+    const yPosition = 262;
 
     // Create a new text element and set its attributes.
     const text = document.createElementNS(_ns, 'text');
@@ -87,7 +88,7 @@ function drawStickText(stickGroup, stickXPostion, stickHeight) {
 }
 
 function clearChart(svgIndex) {
-    const stickGroup = document.getElementById(`stickGroup#${svgIndex}`);
+    const stickGroup = document.getElementById(`stick-group#${svgIndex}`);
     _svg[svgIndex].removeChild(stickGroup);
 }
 
