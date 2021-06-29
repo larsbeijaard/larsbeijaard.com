@@ -70,4 +70,6 @@ body {
     font-weight: bold;
 }
 
-
+.project .controls button:hover {
+    scale: 1.1;
+}
