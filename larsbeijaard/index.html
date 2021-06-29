@@ -18,6 +18,14 @@
     <body id="body">
         <section id="navbar">
             <img id="selfie" src="files/selfie.png">
+
+            <ul id="navbar-content">
+                <li>Home</li>
+                <li>About</li>
+                <li>Sorting</li>
+                <li>Pathfinding</li>
+                <li>Teams</li>
+            </ul>
         </section>
 
         <section id="projects-container">
@@ -29,7 +37,7 @@
                         </div>
                         <div class="controls">
                             <h3 class="name">Bogosort</h3>
-                            <button type="button">Sort</button>
+                            <button class="sort-bogosort" type="button">Sort</button>
                             <button class="randomize 0" type="button">Randomize</button>
                             <button class="speed 0" type="button">x1.0</button>
                         </div>
@@ -42,7 +50,7 @@
                             <svg class="svg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"></svg>
                         </div>
                         <div class="controls">
-                            <h3 class="name">Mergesort</h3>
+                            <h3 class="name">Merge sort</h3>
                             <button type="button">Sort</button>
                             <button class="randomize 1" type="button">Randomize</button>
                             <button class="speed 1" type="button">x1.0</button>
@@ -63,10 +71,67 @@
                         </div>
                     </section>
                 </li>
+                
+                <li class="project">
+                    <section id="heapsort">
+                        <div class="chart">
+                            <svg class="svg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"></svg>
+                        </div>
+                        <div class="controls">
+                            <h3 class="name">Heapsort</h3>
+                            <button type="button">Sort</button>
+                            <button class="randomize 2" type="button">Randomize</button>
+                            <button class="speed 2" type="button">x1.0</button>
+                        </div>
+                    </section>
+                </li>
+                
+                <li class="project">
+                    <section id="treesort">
+                        <div class="chart">
+                            <svg class="svg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"></svg>
+                        </div>
+                        <div class="controls">
+                            <h3 class="name">Tree sort</h3>
+                            <button type="button">Sort</button>
+                            <button class="randomize 2" type="button">Randomize</button>
+                            <button class="speed 2" type="button">x1.0</button>
+                        </div>
+                    </section>
+                </li>
+                
+                <li class="project">
+                    <section id="insertionsort">
+                        <div class="chart">
+                            <svg class="svg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"></svg>
+                        </div>
+                        <div class="controls">
+                            <h3 class="name">Insertion sort</h3>
+                            <button type="button">Sort</button>
+                            <button class="randomize 2" type="button">Randomize</button>
+                            <button class="speed 2" type="button">x1.0</button>
+                        </div>
+                    </section>
+                </li>
+                
+                <li class="project">
+                    <section id="cyclesort">
+                        <div class="chart">
+                            <svg class="svg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"></svg>
+                        </div>
+                        <div class="controls">
+                            <h3 class="name">Cycle sort</h3>
+                            <button type="button">Sort</button>
+                            <button class="randomize 2" type="button">Randomize</button>
+                            <button class="speed 2" type="button">x1.0</button>
+                        </div>
+                    </section>
+                </li>
             </ul>
         </section>
 
-        <script src="js/sorting/stickSetup.js"></script>
-        <script src="js/sorting/controlSpeed.js"></script>
+        <script src="js/sorting/stickSetup.js" type="module"></script>
+        <script src="js/sorting/controlSpeed.js" type="module"></script>
+        <script src="js/sorting/sort.js" type="module"></script>
 	</body>
 </html>
