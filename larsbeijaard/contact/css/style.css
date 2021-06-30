@@ -1,4 +1,5 @@
-#contact-container {
+#contact-container,
+#main-container {
     width: 650px;
     height: auto;
     position: absolute;
@@ -49,4 +50,10 @@
     color: #FFFFFF;
     height: 25px;
     font-weight: bold;
+}
+
+#main-container {
+    display: block;
+    top: 30%;
+    padding: 50px;
 }
