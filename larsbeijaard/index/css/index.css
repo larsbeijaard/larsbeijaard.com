@@ -2,7 +2,7 @@
     width: 650px;
     height: auto;
     position: absolute;
-    top: 12.5%;
+    top: 100px;
     left: 50%;
     transform: translateX(-50%);
     background-color: #FFFFFF;
@@ -45,4 +45,17 @@
 
 .link {
     text-decoration: none;
+}
+
+@media screen and (max-width: 715px) {
+    #main-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    #about-picture img {
+        width: 100%;
+        height: auto;
+    }
 }

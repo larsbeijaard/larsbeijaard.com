@@ -3,7 +3,7 @@
     width: 650px;
     height: auto;
     position: absolute;
-    top: 12.5%;
+    top: 100px;
     left: 50%;
     transform: translateX(-50%);
     background-color: #FFFFFF;
@@ -56,4 +56,11 @@
     display: block;
     top: 30%;
     padding: 50px;
+}
+
+@media screen and (max-width: 715px) {
+    #contact-container,
+    #main-container {
+        width: 90%;
+    }
 }
