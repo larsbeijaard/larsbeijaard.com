@@ -1,0 +1,52 @@
+#contact-container {
+    width: 650px;
+    height: auto;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 0 17px #d8d8d8;
+    display: flex;
+    justify-content: center;
+    padding: 35px 0;
+}
+
+#note {
+    position: absolute
+}
+
+#contact {
+    width: 90%;
+    margin-top: 35px;
+}
+
+#contact div {
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #d8d8d8;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+#contact textarea {
+    resize: vertical;
+    min-height: 200px;
+}
+
+#contact #submit {
+    border: none;
+    border-radius: 2px;
+    background-color: #4865db;
+    color: #FFFFFF;
+    height: 25px;
+    font-weight: bold;
+}
