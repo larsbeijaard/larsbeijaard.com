@@ -1,0 +1,53 @@
+#projects-container {
+    width: 1100px;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    padding-bottom: 100px;
+}
+
+.project {
+    width: 500px;
+    height: 335px;
+    list-style: none;
+    display: inline-block;
+    margin: 0 24px;
+    margin-top: 50px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 0 17px #d8d8d8;
+}
+
+.project .chart {
+    width: 475px;
+    height: 275px;
+    margin: 12px 2.5%;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+    box-shadow: 0 0 9px #eeeeee;
+}
+
+.project .controls {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.project .controls button {
+    width: 90px;
+    border-radius: 50px;
+    height: 22px;
+    color: #FFFFFF;
+    background-color: #4865db;
+    border: none;
+    transition: 0.2s;
+    text-align: center;
+    font-weight: bold;
+}
+
+.project .controls button:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
