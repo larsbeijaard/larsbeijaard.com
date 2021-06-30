@@ -29,7 +29,7 @@ function drawSticks(svgIndex) {
     
     const width = 30;
     const heightMultiplication = 2.7;
-    const spacing = 31.5;
+    const spacing = 31.8;
 
     // Create a group element that contain all of the sticks.
     const allSticksGroup = document.createElementNS(_ns, 'g');
