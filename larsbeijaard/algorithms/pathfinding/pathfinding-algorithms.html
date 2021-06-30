@@ -17,93 +17,108 @@
     </head>
 
     <body id="body">
-        <section id="navbar">
-            <img id="selfie" src="../../global/files/selfie.png">
-
-            <ul id="navbar-content">
-                <li><a href="../../index.html">About</a></li>
-                <li><a href="../../contact/contact.html">Contact</a></li>
-                <li>|</li>
-                <li><a href="../sorting/sorting-algorithms.html">Sorting</a></li>
-                <li><a id="active-page" href="#">Pathfinding</a></li>
-                <li><a href="../other/other-algorithms.html">Other</a></li>
-            </ul>
-        </section>
-
-        <section id="projects-container">
-            <ul>
-                <li class="project">
-                    <section id="dijkstra">
-                        <div class="chart">
-                            <svg class="svg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"></svg>
-                        </div>
-                        <div class="controls">
-                            <h3 class="name">Dijkstra</h3>
-                            <button class="sort-bogosort" type="button">Find path</button>
-                            <button class="randomize 0" type="button">Randomize</button>
-                            <button class="speed 0" type="button">x1.0</button>
-                        </div>
-                    </section>
-                </li>
-                
-                <li class="project">
-                    <section id="astar">
-                        <div class="chart">
-                            <svg class="svg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"></svg>
-                        </div>
-                        <div class="controls">
-                            <h3 class="name">A*</h3>
-                            <button type="button">Find path</button>
-                            <button class="randomize 1" type="button">Randomize</button>
-                            <button class="speed 1" type="button">x1.0</button>
-                        </div>
-                    </section>
-                </li>
-                
-                <li class="project">
-                    <section id="bestfirst">
-                        <div class="chart">
-                            <svg class="svg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"></svg>
-                        </div>
-                        <div class="controls">
-                            <h3 class="name">Best-first</h3>
-                            <button type="button">Find path</button>
-                            <button class="randomize 2" type="button">Randomize</button>
-                            <button class="speed 2" type="button">x1.0</button>
-                        </div>
-                    </section>
-                </li>
-                
-                <li class="project">
-                    <section id="fringesearch">
-                        <div class="chart">
-                            <svg class="svg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"></svg>
-                        </div>
-                        <div class="controls">
-                            <h3 class="name">Fringe search</h3>
-                            <button type="button">Find path</button>
-                            <button class="randomize 3" type="button">Randomize</button>
-                            <button class="speed 3" type="button">x1.0</button>
-                        </div>
-                    </section>
-                </li>
-                
-                <li class="project">
-                    <section id="bstar">
-                        <div class="chart">
-                            <svg class="svg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"></svg>
-                        </div>
-                        <div class="controls">
-                            <h3 class="name">B*</h3>
-                            <button type="button">Find path</button>
-                            <button class="randomize 4" type="button">Randomize</button>
-                            <button class="speed 4" type="button">x1.0</button>
-                        </div>
-                    </section>
-                </li>
-            </ul>
-        </section>
-
-        <script src="js/gridSetup.js" type="module"></script>
+        <nav>
+            <section id="navbar">
+                <figure>
+                    <img id="selfie" src="../../global/files/selfie.png">
+                </figure>
+    
+                <ul id="navbar-content">
+                    <li><a href="../../index.html">About</a></li>
+                    <li><a href="../../contact/contact.html">Contact</a></li>
+                    <li>|</li>
+                    <li><a href="../sorting/sorting-algorithms.html">Sorting</a></li>
+                    <li><a id="active-page" href="#">Pathfinding</a></li>
+                    <li><a href="../other/other-algorithms.html">Other</a></li>
+                </ul>
+            </section>
+        </nav>
+        
+        <main>
+            <section>
+                <p id="mobile-alert">
+                    You are viewing this website on a mobile device. If you want
+                    to have a smooth experience viewing the algoritms, make you are you viewing 
+                    this website on a computer or other screen that is larger than 530 pixels.
+                </p>
+                <script src="../global/js/deviceType.js"></script>
+            </section>
+    
+            <section id="projects-container">
+                <ul>
+                    <li class="project">
+                        <section id="dijkstra">
+                            <div class="chart">
+                                <svg class="svg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"></svg>
+                            </div>
+                            <div class="controls">
+                                <h3 class="name">Dijkstra</h3>
+                                <button class="sort-bogosort" type="button">Find path</button>
+                                <button class="randomize 0" type="button">Randomize</button>
+                                <button class="speed 0" type="button">x1.0</button>
+                            </div>
+                        </section>
+                    </li>
+                    
+                    <li class="project">
+                        <section id="astar">
+                            <div class="chart">
+                                <svg class="svg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"></svg>
+                            </div>
+                            <div class="controls">
+                                <h3 class="name">A*</h3>
+                                <button type="button">Find path</button>
+                                <button class="randomize 1" type="button">Randomize</button>
+                                <button class="speed 1" type="button">x1.0</button>
+                            </div>
+                        </section>
+                    </li>
+                    
+                    <li class="project">
+                        <section id="bestfirst">
+                            <div class="chart">
+                                <svg class="svg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"></svg>
+                            </div>
+                            <div class="controls">
+                                <h3 class="name">Best-first</h3>
+                                <button type="button">Find path</button>
+                                <button class="randomize 2" type="button">Randomize</button>
+                                <button class="speed 2" type="button">x1.0</button>
+                            </div>
+                        </section>
+                    </li>
+                    
+                    <li class="project">
+                        <section id="fringesearch">
+                            <div class="chart">
+                                <svg class="svg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"></svg>
+                            </div>
+                            <div class="controls">
+                                <h3 class="name">Fringe search</h3>
+                                <button type="button">Find path</button>
+                                <button class="randomize 3" type="button">Randomize</button>
+                                <button class="speed 3" type="button">x1.0</button>
+                            </div>
+                        </section>
+                    </li>
+                    
+                    <li class="project">
+                        <section id="bstar">
+                            <div class="chart">
+                                <svg class="svg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"></svg>
+                            </div>
+                            <div class="controls">
+                                <h3 class="name">B*</h3>
+                                <button type="button">Find path</button>
+                                <button class="randomize 4" type="button">Randomize</button>
+                                <button class="speed 4" type="button">x1.0</button>
+                            </div>
+                        </section>
+                    </li>
+                </ul>
+            </section>
+    
+            <script src="js/gridSetup.js" type="module"></script>
+        </main>
 	</body>
 </html>
