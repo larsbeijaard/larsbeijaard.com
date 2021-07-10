@@ -24,24 +24,28 @@ function drawGrid(svgIndex) {
         gridLayout.appendChild(rowGroup);
 
         for (let j = 0; j < horizontalCubes; j++) {
-            // Create a new rect element and set its attributes.
-            const rect = document.createElementNS(_ns, 'rect');
-            rect.setAttribute('x', j * cubeSize);
-            rect.setAttribute('y', i * cubeSize);
-
-            rect.setAttribute('width', cubeSize);
-            rect.setAttribute('height', cubeSize);
-            
-            rect.setAttribute('stroke', '#000000');
-            rect.setAttribute('stroke-width', '0.05px');
-            rect.setAttribute('fill', 'none');
-
-            rect.setAttribute('class', `cube cube#${j}`);
-        
-            // Add the new element to the svg.
-            rowGroup.appendChild(rect);
+            constructGridCube(j * cubeSize, i * cubeSize, cubeSize, j, rowGroup)
         }
     }
+}
+
+function constructGridCube(x, y, size, cubeIndex, parent) {
+        // Create a new rect element and set its attributes.
+        const rect = document.createElementNS(_ns, 'rect');
+        rect.setAttribute('x', x);
+        rect.setAttribute('y', y);
+
+        rect.setAttribute('width', size);
+        rect.setAttribute('height', size);
+        
+        rect.setAttribute('stroke', '#000000');
+        rect.setAttribute('stroke-width', '0.05px');
+        rect.setAttribute('fill', 'none');
+
+        rect.setAttribute('class', `cube cube#${cubeIndex}`);
+    
+        // Add the new element to the svg.
+        parent.appendChild(rect);
 }
 
 InitializeCharts();

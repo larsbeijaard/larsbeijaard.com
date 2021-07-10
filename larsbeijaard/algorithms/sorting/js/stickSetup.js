@@ -39,31 +39,34 @@ function drawSticks(svgIndex) {
     for (let i = 0; i < stickCount; i++) {
         // Create a group element to group the stick-related elements together.
         const stickGroup = document.createElementNS(_ns, 'g');
-        
-        // Generate a random height for the stick.
-        var height = Math.floor(Math.random() * (maxValue - minValue) + minValue);
-        
         stickGroup.setAttribute('class', `stick#${i} ${height}`);
 
-        // Create a new rect element and set its attributes.
-        const stick = document.createElementNS(_ns, 'rect');
-        stick.setAttribute('height', height * heightMultiplication);
-        stick.setAttribute('width', width);
+        // Generate a random height for the stick.
+        var height = Math.floor(Math.random() * (maxValue - minValue) + minValue);
 
-        stick.setAttribute('rx', '2px');
-        stick.setAttribute('ry', '2px');
-
-        stick.setAttribute('x', i * spacing);
-        stick.setAttribute('y', chartHeight - height * heightMultiplication);
-
-        stick.setAttribute('fill', '#4865db');
-        
-        // Add the new element to the svg.
-        stickGroup.appendChild(stick);
-        allSticksGroup.appendChild(stickGroup);
-
+        constructStickRect(height * heightMultiplication, width, i * spacing, chartHeight - height * heightMultiplication, stickGroup, allSticksGroup);
         drawStickText(stickGroup, i * spacing, height);
     }
+}
+
+function constructStickRect(height, width, x, y, localParent, globalParent) {
+
+    // Create a new rect element and set its attributes.
+    const stick = document.createElementNS(_ns, 'rect');
+    stick.setAttribute('height', height);
+    stick.setAttribute('width', width);
+
+    stick.setAttribute('rx', '2px');
+    stick.setAttribute('ry', '2px');
+
+    stick.setAttribute('x', x);
+    stick.setAttribute('y', y);
+
+    stick.setAttribute('fill', '#4865db');
+    
+    // Add the new element to the svg.
+    localParent.appendChild(stick);
+    globalParent.appendChild(localParent);
 }
 
 function drawStickText(stickGroup, stickXPostion, stickHeight) {
