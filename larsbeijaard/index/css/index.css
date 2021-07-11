@@ -47,6 +47,11 @@
     text-decoration: none;
 }
 
+.link img {
+    width: 13px;
+    height: 13px;
+}
+
 @media screen and (max-width: 715px) {
     #main-container {
         width: 90%;

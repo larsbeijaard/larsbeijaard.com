@@ -1,3 +1,17 @@
+#mobile-alert {
+    display: none;
+    margin: 10px;
+    color: #FFFFFF;
+    background-color: #FF0000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #d8d8d8;
+}
+
+#mobile-alert .width {
+    font-weight: bold;
+}
+
 #projects-container {
     width: 1100px;
     height: auto;
@@ -52,18 +66,16 @@
     cursor: pointer;
 }
 
-#mobile-alert {
-    display: none;
-    margin: 10px;
-    color: #FFFFFF;
-    background-color: #FF0000;
-    padding: 5px 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px #d8d8d8;
+#refer-algorithm {
+    text-align: center;
+    margin: 50px 0;
 }
 
-#mobile-alert .width {
+#refer-algorithm #algorithm-type,
+#refer-algorithm a {
+    color: #4865db;
     font-weight: bold;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 1540px) {
