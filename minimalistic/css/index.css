@@ -1,0 +1,16 @@
+main {
+    height: 400px;
+}
+
+main aside figure img {
+    float: left;
+    height: 400px;
+    width: auto;
+    padding-right: 10px;
+}
+
+main p {
+    text-align: justify;
+    margin-bottom: 25px;
+    line-height: 19.5px;
+}
